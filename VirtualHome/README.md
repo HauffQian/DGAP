@@ -30,5 +30,3 @@ interactive_interface_fn   Main process function
 /checkpoint/LID-Text/interactive_eval  Stores the log files of the execution results
 
 ```
-
-for Virtual

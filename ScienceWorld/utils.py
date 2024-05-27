@@ -9,7 +9,7 @@ from sentence_transformers import SentenceTransformer
 
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-from slow_agent.utils import completion_with_backoff
+from LLM_inter.utils import completion_with_backoff
 
 from groq import Groq
 

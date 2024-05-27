@@ -1,0 +1,143 @@
+--------------------------------------------------------------------------
+task_id 1
+# remember the key object locations and states: [("stove(id:150)", "INSIDE", "kitchen(id:50)"), ("chicken(id:332)", "INSIDE", "microwave(id:158)"),("chicken(id:333)", "INSIDE", "microwave(id:158)")] and stove(id:150)'s states are closed,off,microwave(id:158)'s states are closed,off,
+#The task goal: closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_chicken_stove(id:150): 2,
+def task():
+#The goal means the task is "put two chickens in stove and switch on stove"
+#1.Subgoal Thought: find the first chicken
+walk('kitchen(id:50)')
+find('microwave(id:158)')
+open('microwave(id:158)')
+grab('chicken(id:332)')
+close('microwave(id:158)')
+#2.Subgoal Thought: put the chicken in stove
+find('stove(id:150)')
+open('stove(id:150)')
+putin('chicken(id:332)', 'stove(id:150)')
+close('stove(id:150)')
+#3.Subgoal Thought:find the second chicken
+walk('kitchen(id:50)')
+find('microwave(id:158)')
+open('microwave(id:158)')
+grab('chicken(id:333)')
+close('microwave(id:158)')
+#4.Subgoal Thought:put the chicken in stove
+open('stove(id:150)')
+putin('chicken(id:333)', 'stove(id:150)')
+close('stove(id:150)')
+#5.Subgoal Thought:switch on the stove
+switchon('stove(id:150)')
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 2
+# remember the key object locations and states: [('pancake(id:342)', 'INSIDE', 'livingroom(id:262)')] and microwave(id:158)'s states are closed,off,
+#The task goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,inside_pancake_microwave(id:158): 1
+def task():
+#The goal means the task is "put one pancake in microwave and switch on microwave".
+#1.Subgoal Thought: find one pancake.
+walk('livingroom(id:262)')
+find('pancake(id:342)')
+grab('pancake(id:342)')
+#2.Subgoal Thought: put the pancake in microwave.
+find('microwave(id:158)')
+open('microwave(id:158)')
+putin('pancake(id:342)', 'microwave(id:158)')
+close('microwave(id:158)')
+#3.Subgoal Thought:switch on the microwave
+switchon('microwave(id:158)')
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 3
+# remember the key object locations and states: [('cupcake(id:334)', 'INSIDE', 'kitchencabinet(id:131)'), ('cupcake(id:332)', 'INSIDE', 'kitchencabinet(id:130)'), ('cupcake(id:333)', 'INSIDE', 'kitchencabinet(id:126)')] and stove(id:150)'s states are closed,off,kitchencabinet(id:131)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed,
+#The task goal: closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_cupcake_stove(id:150): 1
+def task():
+#The goal means the task is "put one cupcake in stove and switch on stove."
+#1.Subgoal Thought: find one cupcake.
+find('kitchencabinet(id:131)')
+open('kitchencabinet(id:131)')
+find('cupcake(id:334)')
+grab('cupcake(id:334)')
+close('kitchencabinet(id:131)')
+#2.Subgoal Thought: put the cupcake in stove
+find('stove(id:150)')
+open('stove(id:150)')
+putin('cupcake(id:334)', 'stove(id:150)')
+close('stove(id:150)')
+#3.Subgoal Thought:switch on the stove
+switchon('stove(id:150)')
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 4
+# remember the key object current locations and states: [('chicken(id:332)', 'INSIDE', 'fridge(id:149)')] and fridge(id:149)'s state is closed,
+#The task goal: on_chicken_kitchentable(id:123): 1
+def task():
+#The goal means the task is "put one chicken on kitchentable"
+#1.Subgoal Thought: find the chicken
+find('fridge(id:149)')
+open('fridge(id:149)')
+grab('chicken(id:332)')
+close('fridge(id:149)')
+#2.Subgoal Thought: put the chicken on the kitchentable
+find('kitchentable(id:123)')
+putback('chicken(id:332)', 'kitchentable(id:123)')
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 6
+# remember the key object locations and states: [('milk(id:332)', 'INSIDE', 'kitchencabinet(id:128)'), ('milk(id:333)', 'INSIDE', 'kitchencabinet(id:130)')] and kitchencabinet(id:128)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed,
+#The task goal: on_milk_kitchentable(id:123): 2
+def task():
+#The goal means the task is "put two milk on kitchentable"
+#1.Subgoal Thought: find the first milk
+walk('kitchen(id:50)')
+find('kitchencabinet(id:128)')
+open('kitchencabinet(id:128)')
+find('milk(id:332)')
+grab('milk(id:332)')
+close('kitchencabinet(id:128)')
+#2.Subgoal Thought: put the first milk on the kitchentable
+find('kitchentable(id:123)')
+putback('milk(id:332)', 'kitchentable(id:123)')
+#3.Subgoal Thought: find the second milk
+find('kitchencabinet(id:130)')
+open('kitchencabinet(id:130)')
+find('milk(id:333)')
+grab('milk(id:333)')
+close('kitchencabinet(id:130)')
+#4.Subgoal Thought: put the second milk on the kitchentable
+find('kitchentable(id:123)')
+putback('milk(id:333)', 'kitchentable(id:123)')
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 7
+# remember the key object locations and states: [('chicken(id:333)', 'INSIDE', 'stove(id:150)'), ('chicken(id:332)', 'INSIDE', 'fridge(id:149)')] and stove(id:150)'s states are closed,off,fridge(id:149)'s state is closed,
+#The task goal: on_chicken_kitchentable(id:123): 2
+def task():
+#The goal means the task is "put two chickens on kitchentable"
+#1.Subgoal Thought: find the first chicken
+open('fridge(id:149)')
+find('chicken(id:332)')
+grab('chicken(id:332)')
+close('fridge(id:149)')
+#2.Subgoal Thought: put the chicken on kitchentable
+find('kitchentable(id:123)')
+putback('chicken(id:332)', 'kitchentable(id:123)')
+#3.Subgoal Thought:find the second chicken
+open('stove(id:150)')
+find('chicken(id:333)')
+grab('chicken(id:333)')
+close('stove(id:150)')
+#4.Subgoal Thought: put the chicken on kitchentable
+find('kitchentable(id:123)')
+putback('chicken(id:333)', 'kitchentable(id:123)')
+# done
+--------------------------------------------------------------------------

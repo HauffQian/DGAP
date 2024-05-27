@@ -1,0 +1,71 @@
+Now the task is: # put two chickens in stove and switch on stove
+# remember the key object locations and states: [["stove(id:150)", "INSIDE", "kitchen(id:50)"], ["chicken(id:332)", "INSIDE", "microwave(id:158)"]["chicken(id:333)", "INSIDE", "microwave(id:158)"]] and stove(id:150)'s states are closed,off,microwave(id:158)'s state is closed,
+Planning action lists:
+# 1.find the first chicken
+walk('kitchen(id:50)')
+find('microwave(id:158)')
+open('microwave(id:158)')
+grab('chicken(id:332)')
+close('microwave(id:158)')
+# 2.put the chicken in stove
+find('stove(id:150)')
+open('stove(id:150)')
+putin('chicken(id:332)', 'stove(id:150)')
+close('stove(id:150)')
+# 3.find the second chicken
+walk('kitchen(id:50)')
+find('microwave(id:158)')
+open('microwave(id:158)')
+grab('chicken(id:333)')
+close('microwave(id:158)')
+# 4.put the chicken in stove
+open('stove(id:150)')
+putin('chicken(id:333)', 'stove(id:150)')
+close('stove(id:150)')
+# 5.switch on the stove
+switchon('stove(id:150)')
+# 6.done
+
+Now the task is: # put one poundcake on kitchentable
+# remember the key object locations and states: [["kitchentable(id:123)", "INSIDE", "kitchen(id:50)"], ["poundcake(id:332)", "INSIDE", "stove(id:150)"], ["poundcake(id:348)", "INSIDE", "cabinet(id:222)"], ["milk(id:333)", "INSIDE", "kitchencabinet(id:127)"], ["milk(id:334)", "INSIDE", "kitchencabinet(id:128)"], ["milk(id:335)", "INSIDE", "kitchencabinet(id:127)"]] and stove(id:150)'s state is closed,cabinet(id:222)'s states is closed,kitchencabinet(id:127)'s state is closed,kitchencabinet(id:128)'s state is closed,
+Planning action lists:
+# 1.find one poundcake
+walk('kitchen(id:50)')
+find('stove(id:150)')
+open('stove(id:150)')
+find('poundcake(id:332)')
+grab('poundcake(id:332)')
+close('stove(id:150)')
+# 2.put the poundcake on the kitchentable
+find('kitchentable(id:123)')
+putback('poundcake(id:332)', 'kitchentable(id:123)')
+
+Now the task is: # put two milk on kitchentable
+# remember the key object locations and states: [('milk(id:332)', 'INSIDE', 'kitchencabinet(id:128)'), ('milk(id:333)', 'INSIDE', 'kitchencabinet(id:130)')] and kitchencabinet(id:128)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed,
+Planning action lists:
+# find the first milk
+walk('kitchen(id:50)')
+find('kitchencabinet(id:128)')
+open('kitchencabinet(id:128)')
+find('milk(id:332)')
+grab('milk(id:332)')
+close('kitchencabinet(id:128)')
+# put the first milk on the kitchentable
+find('kitchentable(id:123)')
+putback('milk(id:332)', 'kitchentable(id:123)')
+# find the second milk
+find('kitchencabinet(id:130)')
+open('kitchencabinet(id:130)')
+find('milk(id:333)')
+grab('milk(id:333)')
+close('kitchencabinet(id:130)')
+# put the second milk on the kitchentable
+find('kitchentable(id:123)')
+putback('milk(id:333)', 'kitchentable(id:123)')
+
+Now the task is: # switch/turn on microwave
+# remember the key object locations and states: [["milk(id:335)", "INSIDE", "kitchencabinet(id:127)"]] and microwave(id:158)'s state is closed,kitchencabinet(id:127)'s state is closed,
+Planning action lists:
+# 1.switch on the microwave
+switchon('microwave(id:158)')
+

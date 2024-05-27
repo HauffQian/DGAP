@@ -1,0 +1,23 @@
+Task goal: on_poundcake_kitchentable(id:123): 1,on_milk_kitchentable(id:123): 1,
+# The goal means "put one poundcake on kitchentable and put one milk on kitchentable"
+Reasoning task lists:
+# 1.put one poundcake on the kitchentable(id:123)
+# 2.put one milk on the kitchentable(id:123)
+
+Task goal: closed_dishwasher(id:152): 1,turnon_dishwasher(id:152): 1,inside_chicken_dishwasher(id:152): 2,
+# The goal means the task is "put two chickens in dishwasher and switch on dishwasher"
+Reasoning task lists:
+# 1.put two chickens in dishwasher and switch on dishwasher(id:152)
+
+Task goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_pancake_microwave(id:158): 1,inside_cupcake_stove(id:150): 1,
+# The goal means the task is "put one pancake in microwave and switch on microwave, put one cupcake in stove and switch on stove".
+Reasoning task lists:
+# 1.put one pancake in microwave(id:158) and switch on microwave(id:158)
+# 2.put one cupcake in stove(id:150) and switch on stove(id:150)
+
+Task Goal:closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_poundcake_stove(id:150): 3,on_milk_kitchentable(id:123): 2,
+#The goal means the task is "put three poundcakes in stove and switch on stove, put two milk on kitchentable"
+Reasoning task lists:
+# 1.put three poundcakes in stove(id:150) and switch on stove(id:150)
+# 2.put two milk on kitchentable(id:123)
+

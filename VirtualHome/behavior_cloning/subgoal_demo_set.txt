@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------
+task_id 1
+# remember the key object locations and states: [("stove(id:150)", "INSIDE", "kitchen(id:50)"), ("chicken(id:332)", "INSIDE", "microwave(id:158)"),("chicken(id:333)", "INSIDE", "microwave(id:158)")] and stove(id:150)'s states are closed,off,microwave(id:158)'s states are closed,off,
+#The task goal: closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_chicken_stove(id:150): 2,
+def task():
+#The goal means the task is "put two chickens in stove and switch on stove"
+#1.Subgoal Thought: find the first chicken
+#2.Rule Thought: The chicken(id:332) inside microwave(id:158),the microwave is closed,so we should open the microwave first
+walk('kitchen(id:50)')(Score:10)
+find('microwave(id:158)')(Score:10)
+open('microwave(id:158)')(Score:10)
+grab('chicken(id:332)')(Score:10)
+close('microwave(id:158)')(Score:10)
+#0.Rule Thought: You have grabbed chicken, remember you should grab only one item at a time,so put the chicken first.
+#1.Subgoal Thought: put the chicken in stove
+#2.Rule Thought: put the chicken in stove（id:150）, the stove is closed, so we should open the stove first.
+find('stove(id:150)')(Score:10)
+open('stove(id:150)')(Score:10)
+putin('chicken(id:332)', 'stove(id:150)')(Score:10)
+close('stove(id:150)')(Score:10)
+#1.Subgoal Thought:find the second chicken
+#2.Rule Thought: the second chicken(id:333) inside microwave(id:158),the microwave is closed,so we should open the microwave first
+walk('kitchen(id:50)')(Score:10)
+find('microwave(id:158)')(Score:10)
+open('microwave(id:158)')(Score:10)
+grab('chicken(id:333)')(Score:10)
+close('microwave(id:158)')(Score:10)
+#0.Rule Thought: You have grabbed chicken,remember you should grab only one item at a time,so put the chicken first.
+#1.Subgoal Thought:put the chicken in stove
+#2.Rule Thought: put the chicken in stove(id:150), the stove is closed, so we should open the stove first.
+open('stove(id:150)')(Score:10)
+putin('chicken(id:333)', 'stove(id:150)')(Score:10)
+close('stove(id:150)')(Score:10)
+#1.Subgoal Thought:switch on the stove
+#2.Rule Thought: When we switch on the stove, we should make sure it is closed.
+switchon('stove(id:150)')(Score:10)
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 2
+# remember the key object locations and states: [('pancake(id:342)', 'INSIDE', 'livingroom(id:262)')] and microwave(id:158)'s states are closed,off,
+#The task goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,inside_pancake_microwave(id:158): 1
+def task():
+#The goal means the task is "put one pancake in microwave and switch on microwave".
+#1.Subgoal Thought: find one pancake.
+#2.Rule Thought: The pancake(id:342) inside livingroom(id:262),so we should walk to the livingroom first.
+walk('livingroom(id:262)')(Score:10)
+find('pancake(id:342)')(Score:10)
+grab('pancake(id:342)')(Score:10)
+#0.Rule Thought: You have grabbed pancake,remember you should grab only one item at a time,so put the pancake first.
+#1.Subgoal Thought: put the pancake in microwave.
+#2.Rule Thought: put the pancake(id:342) in microwave(id:158), the microwave is closed, so we should open the microwave first.
+find('microwave(id:158)')(Score:10)
+open('microwave(id:158)')(Score:10)
+putin('pancake(id:342)', 'microwave(id:158)')(Score:10)
+close('microwave(id:158)')(Score:10)
+#1.Subgoal Thought:switch on the microwave
+#2.Rule Thought: When we switch on the microwave, we should make sure it is closed.
+switchon('microwave(id:158)')(Score:10)
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 3
+# remember the key object locations and states: [('cupcake(id:334)', 'INSIDE', 'kitchencabinet(id:131)'), ('cupcake(id:332)', 'INSIDE', 'kitchencabinet(id:130)'), ('cupcake(id:333)', 'INSIDE', 'kitchencabinet(id:126)')] and stove(id:150)'s states are closed,off,kitchencabinet(id:131)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed,
+#The task goal: closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_cupcake_stove(id:150): 1
+def task():
+#The goal means the task is "put one cupcake in stove and switch on stove."
+#1.Subgoal Thought: find one cupcake.
+#2.Rule Thought: The cupcake(id:334) inside kitchencabinet(id:131),the kitchencabinet is closed,so we should open the kitchencabinet first.
+find('kitchencabinet(id:131)')(Score:10)
+open('kitchencabinet(id:131)')(Score:10)
+find('cupcake(id:334)')(Score:10)
+grab('cupcake(id:334)')(Score:10)
+close('kitchencabinet(id:131)')(Score:10)
+#0.Rule Thought: You have grabbed cupcake,remember you should grab only one item at a time,so put the cupcake first.
+#1.Subgoal Thought: put the cupcake in stove
+#2.Rule Thought: put the cupcake(id:334) in stove(id:150), and the stove is closed, so we should open the stove first.
+find('stove(id:150)')(Score:10)
+open('stove(id:150)')(Score:10)
+putin('cupcake(id:334)', 'stove(id:150)')(Score:10)
+close('stove(id:150)')(Score:10)
+#1.Subgoal Thought:switch on the stove
+#2.Rule Thought: When we switch on the stove, we should make sure it is closed.
+switchon('stove(id:150)')(Score:10)
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 4
+# remember the key object current locations and states: [('chicken(id:332)', 'INSIDE', 'fridge(id:149)')] and fridge(id:149)'s state is closed,
+#The task goal: on_chicken_kitchentable(id:123): 1
+def task():
+#The goal means the task is "put one chicken on kitchentable"
+#1.Subgoal Thought: find the chicken
+#2.Rule Thought: The chicken(id:332) inside fridge(id:149), the fridge is closed,so we should open the fridge first.
+find('fridge(id:149)')(Score:10)
+open('fridge(id:149)')(Score:10)
+grab('chicken(id:332)')(Score:10)
+close('fridge(id:149)')(Score:10)
+#0.Rule Thought: You have grabbed chicken,remember you should grab only one item at a time,so put the chicken first.
+#1.Subgoal Thought: put the chicken on the kitchentable
+#2.Rule Thought: put the chicken(id:332) on the kitchentable(id:123).
+find('kitchentable(id:123)')(Score:10)
+putback('chicken(id:332)', 'kitchentable(id:123)')(Score:10)
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 5
+# remember the key object locations and states: [('milk(id:332)', 'INSIDE', 'kitchencabinet(id:128)'), ('milk(id:333)', 'INSIDE', 'kitchencabinet(id:130)')] and kitchencabinet(id:128)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed,
+#The task goal: on_milk_kitchentable(id:123): 2
+def task():
+#The goal means the task is "put two milk on kitchentable"
+#1.Subgoal Thought: find the first milk
+#2.Rule Thought: The milk(id:332) inside kitchencabinet(id:128), the kitchencabinet is closed,so we should open the kitchencabinet first.
+walk('kitchen(id:50)')(Score:10)
+find('kitchencabinet(id:128)')(Score:10)
+open('kitchencabinet(id:128)')(Score:10)
+find('milk(id:332)')(Score:10)
+grab('milk(id:332)')(Score:10)
+close('kitchencabinet(id:128)')(Score:10)
+#0.Rule Thought: You have grabbed milk,remember you should grab only one item at a time,so put the milk first.
+#1.Subgoal Thought: put the first milk on the kitchentable
+#2.Rule Thought: put the milk(id:332) on the kitchentable(id:123)
+find('kitchentable(id:123)')(Score:10)
+putback('milk(id:332)', 'kitchentable(id:123)')(Score:10)
+#1.Subgoal Thought: find the second milk
+#2.Rule Thought: The milk(id:333) inside kitchencabinet(id:130), the kitchencabinet is closed,so we should open the kitchencabinet first.
+find('kitchencabinet(id:130)')(Score:10)
+open('kitchencabinet(id:130)')(Score:10)
+find('milk(id:333)')(Score:10)
+grab('milk(id:333)')(Score:10)
+close('kitchencabinet(id:130)')(Score:10)
+#0.Rule Thought: You have grabbed milk,remember you should grab only one item at a time,so put the milk first.
+#1.Subgoal Thought: put the second milk on the kitchentable
+#2.Rule Thought: put the milk(id:333) on the kitchentable(id:123)
+find('kitchentable(id:123)')(Score:10)
+putback('milk(id:333)', 'kitchentable(id:123)')(Score:10)
+# done
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+task_id 6
+# remember the key object locations and states: [('chicken(id:333)', 'INSIDE', 'stove(id:150)'), ('chicken(id:332)', 'INSIDE', 'fridge(id:149)')] and stove(id:150)'s states are closed,off,fridge(id:149)'s state is closed,
+#The task goal: on_chicken_kitchentable(id:123): 2
+def task():
+#The goal means the task is "put two chickens on kitchentable"
+#1.Subgoal Thought: find the first chicken
+#2.Rule Thought: The chicken(id:332) inside fridge(id:149),the fridge is closed, so we should open the fridge first
+open('fridge(id:149)')(Score:10)
+find('chicken(id:332)')(Score:10)
+grab('chicken(id:332)')(Score:10)
+close('fridge(id:149)')(Score:10)
+#0.Rule Thought: You have grabbed chicken,remember you should grab only one item at a time,so put the chicken first.
+#1.Subgoal Thought: put the chicken on kitchentable
+#2.Rule Thought: put the chicken(id:332) on kitchentable(id:123)
+find('kitchentable(id:123)')(Score:10)
+putback('chicken(id:332)', 'kitchentable(id:123)')(Score:10)
+#1.Subgoal Thought:find the second chicken
+#2.Rule Thought: The chicken(id:333) inside stove(id:150),the stove is closed, so we should open the stove first
+open('stove(id:150)')(Score:10)
+find('chicken(id:333)')(Score:10)
+grab('chicken(id:333)')(Score:10)
+close('stove(id:150)')(Score:10)
+#0.Rule Thought: You have grabbed chicken,remember you should grab only one item at a time,so put the chicken first.
+#1.Subgoal Thought: put the chicken on kitchentable
+#2.Rule Thought: put the chicken(id:333) on kitchentable(id:123)
+find('kitchentable(id:123)')(Score:10)
+putback('chicken(id:333)', 'kitchentable(id:123)')(Score:10)
+# done
+--------------------------------------------------------------------------

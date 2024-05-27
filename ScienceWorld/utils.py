@@ -22,7 +22,7 @@ import editdistance
 import time
 import tiktoken
 
-from slow_agent import local_llm
+from LLM_inter import local_llm
 import os
 from transformers import RobertaTokenizer, TFRobertaModel
 

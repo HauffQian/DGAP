@@ -5,7 +5,7 @@ import pdb
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description='Pre-Trained Language Models for Interactive Decision-Making')
+            parser = argparse.ArgumentParser(description='DAPG for Embodied Planning')
 
     ## Exec
     parser.add_argument('--exec_file', type=str, default='../virtualhome/simulation/unity_simulator/v2.2.5/linux_exec.v2.2.5_beta.x86_64')

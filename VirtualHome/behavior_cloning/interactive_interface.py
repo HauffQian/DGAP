@@ -37,7 +37,7 @@ def calsco(roberta_model, roberta_tokenizer, task_goal , recent_action, agent_ac
     des = des[:-2] + ". Action: " + agent_action
     inputs = roberta_tokenizer([des, ], return_tensors='pt')
     score = roberta_model(**inputs).logits[0][0].item()
-    score = round(score*10)
+    score = round(score)
     return score
 
 
@@ -111,7 +111,7 @@ def score_search(roberta_model, roberta_tokenizer, lid_goals, recent_action, cur
     for score, action in top_20_actions:
         if mem_graph.simulate_action(action) is True:
             break
-    return round(score*10), action
+    return round(score), action
 
     
     

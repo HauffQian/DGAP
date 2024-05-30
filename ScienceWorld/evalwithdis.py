@@ -390,7 +390,8 @@ def eval(args, task_num, logger):
                                                      final_action, roberta_model, roberta_tokenizer)
                         else:
                             _ , jug = get_model_detee(args, extra_input_str, tokenizer, lm_model, device, logger, embed, final_action)
-                        jug = round(jug * 10)
+                            jug = jug * 10
+                        jug = round(jug)
                         if jug < 4:
                             action, jug = score_based_search(roberta_model, roberta_tokenizer, extra_input_str, env)
                         break 
@@ -543,7 +544,8 @@ def eval(args, task_num, logger):
                                                final_action, roberta_model, roberta_tokenizer)
                 else:
                     _, jug = get_model_detee(args, extra_input_str, tokenizer, lm_model, device, logger, embed, final_action)
-                jug = round(jug * 10)
+                    jug = jug * 10
+                jug = round(jug)
                 if jug < 4:
                     action, jug = score_based_search(roberta_model, roberta_tokenizer, extra_input_str)
 

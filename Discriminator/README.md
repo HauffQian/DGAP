@@ -42,4 +42,4 @@ python glue_main.py \
 
 This code is based on resources from the following project:
 
-- [REDco GitHub Repository](https://github.com/tanyuqian/redco)
+- [redco](https://github.com/tanyuqian/redco)

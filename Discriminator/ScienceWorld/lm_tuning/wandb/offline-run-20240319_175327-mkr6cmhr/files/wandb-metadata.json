@@ -1,0 +1,394 @@
+{
+    "os": "Linux-4.18.0-513.11.1.el8_9.x86_64-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2024-03-19T09:53:27.472423",
+    "startedAt": "2024-03-19T09:53:27.257252",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--local_rank=0",
+        "--cache_dir",
+        "/net/nfs/path/to/cache/",
+        "--model_name_or_path",
+        "flan-t5-large",
+        "--output_dir",
+        "/fs/scratch/SGH_AIGC_szh-hpc_users/MMAI/qha2sgh/t5-large/flan_large_0319",
+        "--do_train",
+        "--do_eval",
+        "--save_total_limit=100",
+        "--train_file",
+        "../data_utils/data_v4/fast_system.train.jsonl",
+        "--validation_file",
+        "../data_utils/data_v4/fast_system.val.jsonl",
+        "--predict_with_generate",
+        "0",
+        "--learning_rate",
+        "1e-4",
+        "--adam_eps",
+        "1e-06",
+        "--overwrite_output_dir",
+        "--max_source_length",
+        "1024",
+        "--max_target_length",
+        "16",
+        "--per_device_train_batch_size",
+        "8",
+        "--per_device_eval_batch_size",
+        "32",
+        "--metric_for_best_model",
+        "eval_loss",
+        "--greater_is_better=False",
+        "--deepspeed",
+        "zero_2_bf16.json",
+        "--gradient_accumulation_steps",
+        "4",
+        "--num_train_epochs",
+        "8",
+        "--logging_steps",
+        "1",
+        "--load_best_model_at_end=True",
+        "--save_strategy=steps",
+        "--evaluation_strategy=steps",
+        "--save_steps",
+        "100",
+        "--eval_steps",
+        "100",
+        "--seed",
+        "42",
+        "--report_to",
+        "wandb",
+        "--run_name",
+        "flan_large_0413"
+    ],
+    "state": "running",
+    "program": "./ds_train.py",
+    "codePathLocal": "ds_train.py",
+    "codePath": "fast_agent/ds_train.py",
+    "git": {
+        "remote": "https://github.com/yuchenlin/SwiftSage",
+        "commit": "b8ea624231a6a8d83d78c1c12bea1b44b8ea758b"
+    },
+    "email": null,
+    "root": "/home/qha2sgh/SwiftSage",
+    "host": "szh-hpc-b01gp05",
+    "username": "qha2sgh",
+    "executable": "/home/qha2sgh/.conda/envs/swiftsage/bin/python",
+    "cpu_count": 56,
+    "cpu_count_logical": 56,
+    "cpu_freq": {
+        "current": 3483.5641250000003,
+        "min": 800.0,
+        "max": 3500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3396.148,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3288.723,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3400.002,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3399.997,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 800.0,
+            "max": 3500.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 503.264102935791,
+            "used": 7.3648681640625
+        }
+    },
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        }
+    ],
+    "memory": {
+        "total": 1006.528205871582
+    }
+}

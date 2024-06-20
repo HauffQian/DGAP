@@ -1,0 +1,39 @@
+## Scheduler parameters ##
+   
+#BSUB -J jobss            # job name
+#BSUB -o jobss.stdout   # optional: have output written to specific file
+#BSUB -e jobss.stderr   # optional: have errors written to specific file
+# #BSUB -q rb_highend               # optional: use highend nodes w/ Volta GPUs (default: Geforce GPUs)
+#BSUB -W 24:00                       # fill in desired wallclock time [hours,]minutes (hours are optional)
+#BSUB -n 20                          # min CPU cores,max CPU cores (max cores is optional)
+#BSUB -M 4096                       # fill in required amount of memory per CPU core(in Mbyte)
+# #BSUB -R "span[hosts=1]"          # optional: run on single host (if using more than 1 CPU core)
+# #BSUB -R "span[ptile=9]"         # optional: fill in to specify cores per node (max 28-40 depending on node type)
+# #BSUB -P myProject                # optional: fill in cluster project
+#BSUB -gpu "num=2"
+   
+# module unload tensorrt/6.0_cuda10.2
+# module unload cudnn/10.2_v7.6 tensorrt/6.0_cuda10.2 openmpi/4.0.3_cuda10.2
+# module unload cuda
+module load cuda/11.7.0 
+module load conda/4.7.12_pipenv
+
+
+# Here comes your code
+source activate swiftsage
+# ln -s /fs/scratch/SGH_AIGC_szh-hpc_users/mixtral/mixtral-8x7b-instruct ckpts
+nvidia-smi
+cd ~/ollama
+./ollama serve &
+echo ollama service start
+cd /home/qha2sgh/SwiftSage/fast_api/
+export http_proxy="127.0.0.1:11434"
+export HTTP_PROXY="127.0.0.1:11434"
+export https_proxy="127.0.0.1:11434"
+export HTTPS_PROXY="127.0.0.1:11434"
+uvicorn ollama_server:app --host 0.0.0.0   &
+streamlit run ollama_web.py &
+
+
+
+

@@ -1,0 +1,2637 @@
+time=2024-04-30T09:21:53.510+08:00 level=INFO source=images.go:710 msg="total blobs: 16"
+time=2024-04-30T09:21:53.513+08:00 level=INFO source=images.go:717 msg="total unused blobs removed: 0"
+time=2024-04-30T09:21:53.514+08:00 level=INFO source=routes.go:1021 msg="Listening on 127.0.0.1:11434 (version 0.1.28)"
+time=2024-04-30T09:21:53.514+08:00 level=INFO source=payload_common.go:107 msg="Extracting dynamic libraries..."
+INFO:     Started server process [1661429]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+time=2024-04-30T09:21:56.311+08:00 level=INFO source=payload_common.go:146 msg="Dynamic LLM libraries [cuda_v11 cpu_avx2 rocm_v6 cpu_avx cpu rocm_v5]"
+time=2024-04-30T09:21:56.311+08:00 level=INFO source=gpu.go:94 msg="Detecting GPU type"
+time=2024-04-30T09:21:56.311+08:00 level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-04-30T09:21:56.316+08:00 level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/usr/lib/libnvidia-ml.so.535.161.08 /usr/lib64/libnvidia-ml.so.535.161.08 /lib64/libnvidia-ml.so.535.161.08]"
+time=2024-04-30T09:21:56.316+08:00 level=INFO source=gpu.go:323 msg="Unable to load CUDA management library /usr/lib/libnvidia-ml.so.535.161.08: Unable to load /usr/lib/libnvidia-ml.so.535.161.08 library to query for Nvidia GPUs: /usr/lib/libnvidia-ml.so.535.161.08: wrong ELF class: ELFCLASS32"
+time=2024-04-30T09:21:56.332+08:00 level=INFO source=gpu.go:99 msg="Nvidia GPU detected"
+time=2024-04-30T09:21:56.332+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T09:21:56.343+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-04-30T09:24:34.907+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T09:24:34.908+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-04-30T09:24:34.908+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T09:24:34.908+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-04-30T09:24:34.908+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T09:24:34.916+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama3713673467/cuda_v11/libext_server.so"
+time=2024-04-30T09:24:34.916+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-04-30T09:25:19.125+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+time=2024-04-30T14:23:33.914+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T14:23:33.915+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-04-30T14:23:33.915+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T14:23:33.915+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-04-30T14:23:33.915+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T14:23:33.915+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama3713673467/cuda_v11/libext_server.so"
+time=2024-04-30T14:23:33.915+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-04-30T14:23:48.793+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+time=2024-04-30T16:48:04.630+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T16:48:04.631+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-04-30T16:48:04.631+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T16:48:04.631+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-04-30T16:48:04.631+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-30T16:48:04.631+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama3713673467/cuda_v11/libext_server.so"
+time=2024-04-30T16:48:04.631+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-04-30T16:48:16.547+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+SIGQUIT: quit
+PC=0x4700a1 m=0 sigcode=0
+
+goroutine 0 [idle]:
+runtime.futex()
+	/usr/local/go/src/runtime/sys_linux_amd64.s:557 +0x21 fp=0x7fffffffa670 sp=0x7fffffffa668 pc=0x4700a1
+runtime.futexsleep(0x7fffffffa6e8?, 0x442bd3?, 0x7fffffffa6e8?)
+	/usr/local/go/src/runtime/os_linux.go:69 +0x30 fp=0x7fffffffa6c0 sp=0x7fffffffa670 pc=0x437eb0
+runtime.notesleep(0x11b3a7e8)
+	/usr/local/go/src/runtime/lock_futex.go:160 +0x87 fp=0x7fffffffa6f8 sp=0x7fffffffa6c0 pc=0x411067
+runtime.mPark(...)
+	/usr/local/go/src/runtime/proc.go:1632
+runtime.stoplockedm()
+	/usr/local/go/src/runtime/proc.go:2780 +0x73 fp=0x7fffffffa750 sp=0x7fffffffa6f8 pc=0x442df3
+runtime.schedule()
+	/usr/local/go/src/runtime/proc.go:3561 +0x3a fp=0x7fffffffa788 sp=0x7fffffffa750 pc=0x444c3a
+runtime.park_m(0xc0004bb1e0?)
+	/usr/local/go/src/runtime/proc.go:3745 +0x11f fp=0x7fffffffa7d0 sp=0x7fffffffa788 pc=0x4451bf
+traceback: unexpected SPWRITE function runtime.mcall
+runtime.mcall()
+	/usr/local/go/src/runtime/asm_amd64.s:458 +0x4e fp=0x7fffffffa7e8 sp=0x7fffffffa7d0 pc=0x46c2ce
+
+goroutine 1 [IO wait, 802 minutes]:
+runtime.gopark(0x480f10?, 0xc000383850?, 0xa0?, 0x38?, 0x4f711d?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000383830 sp=0xc000383810 pc=0x43e7ee
+runtime.netpollblock(0xc0003838c0?, 0x4092a6?, 0x0?)
+	/usr/local/go/src/runtime/netpoll.go:564 +0xf7 fp=0xc000383868 sp=0xc000383830 pc=0x437277
+internal/poll.runtime_pollWait(0x15555538de28, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:343 +0x85 fp=0xc000383888 sp=0xc000383868 pc=0x468a05
+internal/poll.(*pollDesc).wait(0xc0001ec480?, 0x5?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc0003838b0 sp=0xc000383888 pc=0x4efd67
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0001ec480)
+	/usr/local/go/src/internal/poll/fd_unix.go:611 +0x2ac fp=0xc000383958 sp=0xc0003838b0 pc=0x4f524c
+net.(*netFD).accept(0xc0001ec480)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29 fp=0xc000383a10 sp=0xc000383958 pc=0x56be29
+net.(*TCPListener).accept(0xc000496240)
+	/usr/local/go/src/net/tcpsock_posix.go:152 +0x1e fp=0xc000383a38 sp=0xc000383a10 pc=0x580c3e
+net.(*TCPListener).Accept(0xc000496240)
+	/usr/local/go/src/net/tcpsock.go:315 +0x30 fp=0xc000383a68 sp=0xc000383a38 pc=0x57fdf0
+net/http.(*onceCloseListener).Accept(0xc0004d0000?)
+	<autogenerated>:1 +0x24 fp=0xc000383a80 sp=0xc000383a68 pc=0x6f1ae4
+net/http.(*Server).Serve(0xc00013c000, {0x11720d70, 0xc000496240})
+	/usr/local/go/src/net/http/server.go:3056 +0x364 fp=0xc000383bb0 sp=0xc000383a80 pc=0x6cf1a4
+github.com/jmorganca/ollama/server.Serve({0x11720d70, 0xc000496240})
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1048 +0x454 fp=0xc000383c98 sp=0xc000383bb0 pc=0x9a1654
+github.com/jmorganca/ollama/cmd.RunServer(0xc00025aa00?, {0x11b698c0?, 0x4?, 0xadab0a?})
+	/go/src/github.com/jmorganca/ollama/cmd/cmd.go:706 +0x1b9 fp=0xc000383d30 sp=0xc000383c98 pc=0x9b4799
+github.com/spf13/cobra.(*Command).execute(0xc000455800, {0x11b698c0, 0x0, 0x0})
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:940 +0x87c fp=0xc000383e68 sp=0xc000383d30 pc=0x764d9c
+github.com/spf13/cobra.(*Command).ExecuteC(0xc000454c00)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:1068 +0x3a5 fp=0xc000383f20 sp=0xc000383e68 pc=0x7655c5
+github.com/spf13/cobra.(*Command).Execute(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:992
+github.com/spf13/cobra.(*Command).ExecuteContext(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:985
+main.main()
+	/go/src/github.com/jmorganca/ollama/main.go:11 +0x4d fp=0xc000383f40 sp=0xc000383f20 pc=0x9bc90d
+runtime.main()
+	/usr/local/go/src/runtime/proc.go:267 +0x2bb fp=0xc000383fe0 sp=0xc000383f40 pc=0x43e39b
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000383fe8 sp=0xc000383fe0 pc=0x46e2c1
+
+goroutine 2 [force gc (idle), 2 minutes]:
+runtime.gopark(0x2add0dbd74eca?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000b0fa8 sp=0xc0000b0f88 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.forcegchelper()
+	/usr/local/go/src/runtime/proc.go:322 +0xb3 fp=0xc0000b0fe0 sp=0xc0000b0fa8 pc=0x43e673
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000b0fe8 sp=0xc0000b0fe0 pc=0x46e2c1
+created by runtime.init.6 in goroutine 1
+	/usr/local/go/src/runtime/proc.go:310 +0x1a
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x1?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000b1778 sp=0xc0000b1758 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.bgsweep(0x0?)
+	/usr/local/go/src/runtime/mgcsweep.go:321 +0xdf fp=0xc0000b17c8 sp=0xc0000b1778 pc=0x42a73f
+runtime.gcenable.func1()
+	/usr/local/go/src/runtime/mgc.go:200 +0x25 fp=0xc0000b17e0 sp=0xc0000b17c8 pc=0x41f865
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000b17e8 sp=0xc0000b17e0 pc=0x46e2c1
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:200 +0x66
+
+goroutine 4 [runnable]:
+runtime.gopark(0x21d1db?, 0x15ae29?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000b1f70 sp=0xc0000b1f50 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.(*scavengerState).park(0x11b39c40)
+	/usr/local/go/src/runtime/mgcscavenge.go:425 +0x49 fp=0xc0000b1fa0 sp=0xc0000b1f70 pc=0x427f69
+runtime.bgscavenge(0xc000040150?)
+	/usr/local/go/src/runtime/mgcscavenge.go:658 +0x59 fp=0xc0000b1fc8 sp=0xc0000b1fa0 pc=0x428519
+runtime.gcenable.func2()
+	/usr/local/go/src/runtime/mgc.go:201 +0x25 fp=0xc0000b1fe0 sp=0xc0000b1fc8 pc=0x41f805
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000b1fe8 sp=0xc0000b1fe0 pc=0x46e2c1
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:201 +0xa5
+
+goroutine 5 [finalizer wait, 1450 minutes]:
+runtime.gopark(0xad3ac0?, 0x10043f901?, 0x0?, 0x0?, 0x4469a5?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000b0628 sp=0xc0000b0608 pc=0x43e7ee
+runtime.runfinq()
+	/usr/local/go/src/runtime/mfinal.go:193 +0x107 fp=0xc0000b07e0 sp=0xc0000b0628 pc=0x41e8e7
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000b07e8 sp=0xc0000b07e0 pc=0x46e2c1
+created by runtime.createfing in goroutine 1
+	/usr/local/go/src/runtime/mfinal.go:163 +0x3d
+
+goroutine 6 [GC worker (idle)]:
+runtime.gopark(0x2add0dbdfa757?, 0x1?, 0x41?, 0x6d?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000b2750 sp=0xc0000b2730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000b27e0 sp=0xc0000b2750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000b27e8 sp=0xc0000b27e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 18 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x4b?, 0xb4?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000ac750 sp=0xc0000ac730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000ac7e0 sp=0xc0000ac750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000ac7e8 sp=0xc0000ac7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 19 [GC worker (idle), 1148 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x3?, 0x79?, 0xf?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000acf50 sp=0xc0000acf30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000acfe0 sp=0xc0000acf50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000acfe8 sp=0xc0000acfe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 20 [GC worker (idle)]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0xb?, 0xf?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000ad750 sp=0xc0000ad730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000ad7e0 sp=0xc0000ad750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000ad7e8 sp=0xc0000ad7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 21 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647994544?, 0x3?, 0xfc?, 0x7a?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000adf50 sp=0xc0000adf30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000adfe0 sp=0xc0000adf50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000adfe8 sp=0xc0000adfe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 22 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x27716479945f8?, 0x1?, 0x95?, 0xda?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000ae750 sp=0xc0000ae730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000ae7e0 sp=0xc0000ae750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000ae7e8 sp=0xc0000ae7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 23 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647991e86?, 0x3?, 0xd8?, 0x96?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000aef50 sp=0xc0000aef30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000aefe0 sp=0xc0000aef50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000aefe8 sp=0xc0000aefe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 24 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647993ecb?, 0x3?, 0x74?, 0x7c?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000af750 sp=0xc0000af730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000af7e0 sp=0xc0000af750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000af7e8 sp=0xc0000af7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 25 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647991fff?, 0x3?, 0x6c?, 0x49?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000aff50 sp=0xc0000aff30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000affe0 sp=0xc0000aff50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000affe8 sp=0xc0000affe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 26 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647994c0e?, 0x3?, 0xfd?, 0x51?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000116750 sp=0xc000116730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0001167e0 sp=0xc000116750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0001167e8 sp=0xc0001167e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 34 [GC worker (idle), 701 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x5e?, 0x52?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000112750 sp=0xc000112730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0001127e0 sp=0xc000112750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0001127e8 sp=0xc0001127e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 35 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647994e69?, 0x3?, 0x71?, 0x4e?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000112f50 sp=0xc000112f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000112fe0 sp=0xc000112f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000112fe8 sp=0xc000112fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 36 [GC worker (idle)]:
+runtime.gopark(0x2add0dbdff0ed?, 0x1?, 0x71?, 0x8f?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000113750 sp=0xc000113730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0001137e0 sp=0xc000113750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0001137e8 sp=0xc0001137e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 37 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x277164799479d?, 0x3?, 0xf0?, 0x57?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000113f50 sp=0xc000113f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000113fe0 sp=0xc000113f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000113fe8 sp=0xc000113fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 27 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x277164799422e?, 0x3?, 0xcd?, 0x5c?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000116f50 sp=0xc000116f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000116fe0 sp=0xc000116f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000116fe8 sp=0xc000116fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 38 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x277164799453e?, 0x3?, 0xec?, 0x5c?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000114750 sp=0xc000114730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0001147e0 sp=0xc000114750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0001147e8 sp=0xc0001147e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 7 [GC worker (idle)]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0xd0?, 0x46?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000b2f50 sp=0xc0000b2f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000b2fe0 sp=0xc0000b2f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000b2fe8 sp=0xc0000b2fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 8 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647992082?, 0x3?, 0x7f?, 0x4b?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000b3750 sp=0xc0000b3730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000b37e0 sp=0xc0000b3750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000b37e8 sp=0xc0000b37e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 50 [GC worker (idle), 6 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x6d?, 0xb1?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000586750 sp=0xc000586730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005867e0 sp=0xc000586750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005867e8 sp=0xc0005867e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 9 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647991c36?, 0x3?, 0xf6?, 0x80?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0000b3f50 sp=0xc0000b3f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000b3fe0 sp=0xc0000b3f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000b3fe8 sp=0xc0000b3fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 51 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x3?, 0x35?, 0xd2?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000586f50 sp=0xc000586f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000586fe0 sp=0xc000586f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000586fe8 sp=0xc000586fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 52 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0xf?, 0xf6?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000587750 sp=0xc000587730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005877e0 sp=0xc000587750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005877e8 sp=0xc0005877e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 53 [GC worker (idle), 2 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x47?, 0xd?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000587f50 sp=0xc000587f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000587fe0 sp=0xc000587f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000587fe8 sp=0xc000587fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 54 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x27716479921e6?, 0x3?, 0xe1?, 0x54?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000588750 sp=0xc000588730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005887e0 sp=0xc000588750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005887e8 sp=0xc0005887e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 55 [GC worker (idle)]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x19?, 0x56?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000588f50 sp=0xc000588f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000588fe0 sp=0xc000588f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000588fe8 sp=0xc000588fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 56 [GC worker (idle), 701 minutes]:
+runtime.gopark(0x2879263c6686f?, 0x1?, 0x7b?, 0x3b?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000589750 sp=0xc000589730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005897e0 sp=0xc000589750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005897e8 sp=0xc0005897e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 10 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x27716479920a0?, 0x3?, 0x3a?, 0x54?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000582750 sp=0xc000582730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005827e0 sp=0xc000582750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005827e8 sp=0xc0005827e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 11 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x27716479951ec?, 0x1?, 0x17?, 0xa9?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000582f50 sp=0xc000582f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000582fe0 sp=0xc000582f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000582fe8 sp=0xc000582fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 12 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x3?, 0x83?, 0xf4?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000583750 sp=0xc000583730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005837e0 sp=0xc000583750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005837e8 sp=0xc0005837e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 28 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647994bf6?, 0x3?, 0xd6?, 0x58?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000117750 sp=0xc000117730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0001177e0 sp=0xc000117750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0001177e8 sp=0xc0001177e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 29 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x3?, 0x91?, 0x9d?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000117f50 sp=0xc000117f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000117fe0 sp=0xc000117f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000117fe8 sp=0xc000117fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 13 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x27716479920dd?, 0x3?, 0x4e?, 0xef?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000583f50 sp=0xc000583f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000583fe0 sp=0xc000583f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000583fe8 sp=0xc000583fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 14 [GC worker (idle), 701 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0xda?, 0xa2?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000584750 sp=0xc000584730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005847e0 sp=0xc000584750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005847e8 sp=0xc0005847e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 30 [GC worker (idle), 1003 minutes]:
+runtime.gopark(0x2771647995630?, 0x3?, 0x7e?, 0x56?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000118750 sp=0xc000118730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0001187e0 sp=0xc000118750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0001187e8 sp=0xc0001187e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 15 [GC worker (idle), 2 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0xd7?, 0x44?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000584f50 sp=0xc000584f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000584fe0 sp=0xc000584f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000584fe8 sp=0xc000584fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 57 [GC worker (idle)]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x0?, 0x81?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000589f50 sp=0xc000589f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000589fe0 sp=0xc000589f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000589fe8 sp=0xc000589fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 31 [select, 1450 minutes, locked to thread]:
+runtime.gopark(0xc0005857a8?, 0x2?, 0x89?, 0xea?, 0xc0005857a4?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000585638 sp=0xc000585618 pc=0x43e7ee
+runtime.selectgo(0xc0005857a8, 0xc0005857a0, 0x0?, 0x0, 0x0?, 0x1)
+	/usr/local/go/src/runtime/select.go:327 +0x725 fp=0xc000585758 sp=0xc000585638 pc=0x44e325
+runtime.ensureSigM.func1()
+	/usr/local/go/src/runtime/signal_unix.go:1014 +0x19f fp=0xc0005857e0 sp=0xc000585758 pc=0x46535f
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005857e8 sp=0xc0005857e0 pc=0x46e2c1
+created by runtime.ensureSigM in goroutine 1
+	/usr/local/go/src/runtime/signal_unix.go:997 +0xc8
+
+goroutine 32 [syscall]:
+runtime.notetsleepg(0xffffffffffffffff?, 0xc000585f28?)
+	/usr/local/go/src/runtime/lock_futex.go:236 +0x29 fp=0xc000585fa0 sp=0xc000585f68 pc=0x411349
+os/signal.signal_recv()
+	/usr/local/go/src/runtime/sigqueue.go:152 +0x29 fp=0xc000585fc0 sp=0xc000585fa0 pc=0x46ac89
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x13 fp=0xc000585fe0 sp=0xc000585fc0 pc=0x6f4513
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000585fe8 sp=0xc000585fe0 pc=0x46e2c1
+created by os/signal.Notify.func1.1 in goroutine 1
+	/usr/local/go/src/os/signal/signal.go:151 +0x1f
+
+goroutine 39 [runnable]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc00019e718 sp=0xc00019e6f8 pc=0x43e7ee
+runtime.chanrecv(0xc0001f38c0, 0x0, 0x1)
+	/usr/local/go/src/runtime/chan.go:583 +0x3cd fp=0xc00019e790 sp=0xc00019e718 pc=0x40beed
+runtime.chanrecv1(0x0?, 0x0?)
+	/usr/local/go/src/runtime/chan.go:442 +0x12 fp=0xc00019e7b8 sp=0xc00019e790 pc=0x40baf2
+github.com/jmorganca/ollama/server.Serve.func2()
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1030 +0x25 fp=0xc00019e7e0 sp=0xc00019e7b8 pc=0x9a16e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc00019e7e8 sp=0xc00019e7e0 pc=0x46e2c1
+created by github.com/jmorganca/ollama/server.Serve in goroutine 1
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1029 +0x3c7
+
+rax    0xca
+rbx    0x0
+rcx    0x4700a3
+rdx    0x0
+rdi    0x11b3a7e8
+rsi    0x80
+rbp    0x7fffffffa6b0
+rsp    0x7fffffffa668
+r8     0x0
+r9     0x0
+r10    0x0
+r11    0x286
+r12    0x7fffffffa688
+r13    0xc0005857a4
+r14    0x11b3a080
+r15    0x0
+rip    0x4700a1
+rflags 0x286
+cs     0x33
+fs     0x0
+gs     0x0
+time=2024-05-06T15:12:50.477+08:00 level=INFO source=images.go:710 msg="total blobs: 16"
+time=2024-05-06T15:12:50.487+08:00 level=INFO source=images.go:717 msg="total unused blobs removed: 0"
+time=2024-05-06T15:12:50.488+08:00 level=INFO source=routes.go:1021 msg="Listening on 127.0.0.1:11434 (version 0.1.28)"
+time=2024-05-06T15:12:50.488+08:00 level=INFO source=payload_common.go:107 msg="Extracting dynamic libraries..."
+INFO:     Started server process [3527233]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+time=2024-05-06T15:12:53.202+08:00 level=INFO source=payload_common.go:146 msg="Dynamic LLM libraries [rocm_v6 cpu_avx2 cuda_v11 rocm_v5 cpu_avx cpu]"
+time=2024-05-06T15:12:53.202+08:00 level=INFO source=gpu.go:94 msg="Detecting GPU type"
+time=2024-05-06T15:12:53.202+08:00 level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-05-06T15:12:53.206+08:00 level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/usr/lib/libnvidia-ml.so.535.161.08 /usr/lib64/libnvidia-ml.so.535.161.08 /lib64/libnvidia-ml.so.535.161.08]"
+time=2024-05-06T15:12:53.206+08:00 level=INFO source=gpu.go:323 msg="Unable to load CUDA management library /usr/lib/libnvidia-ml.so.535.161.08: Unable to load /usr/lib/libnvidia-ml.so.535.161.08 library to query for Nvidia GPUs: /usr/lib/libnvidia-ml.so.535.161.08: wrong ELF class: ELFCLASS32"
+time=2024-05-06T15:12:53.223+08:00 level=INFO source=gpu.go:99 msg="Nvidia GPU detected"
+time=2024-05-06T15:12:53.223+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-06T15:12:53.236+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3527233]
+time=2024-05-06T15:17:37.830+08:00 level=INFO source=images.go:710 msg="total blobs: 16"
+time=2024-05-06T15:17:37.832+08:00 level=INFO source=images.go:717 msg="total unused blobs removed: 0"
+time=2024-05-06T15:17:37.833+08:00 level=INFO source=routes.go:1021 msg="Listening on 127.0.0.1:11434 (version 0.1.28)"
+time=2024-05-06T15:17:37.833+08:00 level=INFO source=payload_common.go:107 msg="Extracting dynamic libraries..."
+INFO:     Started server process [3529571]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+time=2024-05-06T15:17:40.598+08:00 level=INFO source=payload_common.go:146 msg="Dynamic LLM libraries [cuda_v11 cpu_avx2 rocm_v5 cpu_avx rocm_v6 cpu]"
+time=2024-05-06T15:17:40.598+08:00 level=INFO source=gpu.go:94 msg="Detecting GPU type"
+time=2024-05-06T15:17:40.598+08:00 level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-05-06T15:17:40.602+08:00 level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/usr/lib/libnvidia-ml.so.535.161.08 /usr/lib64/libnvidia-ml.so.535.161.08 /lib64/libnvidia-ml.so.535.161.08]"
+time=2024-05-06T15:17:40.602+08:00 level=INFO source=gpu.go:323 msg="Unable to load CUDA management library /usr/lib/libnvidia-ml.so.535.161.08: Unable to load /usr/lib/libnvidia-ml.so.535.161.08 library to query for Nvidia GPUs: /usr/lib/libnvidia-ml.so.535.161.08: wrong ELF class: ELFCLASS32"
+time=2024-05-06T15:17:40.619+08:00 level=INFO source=gpu.go:99 msg="Nvidia GPU detected"
+time=2024-05-06T15:17:40.634+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-06T15:17:40.646+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-06T15:21:25.239+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-06T15:21:25.241+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-06T15:21:25.241+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-06T15:21:25.241+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-06T15:21:25.241+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-06T15:21:25.249+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama3303250515/cuda_v11/libext_server.so"
+time=2024-05-06T15:21:25.249+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-05-06T15:22:09.321+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+time=2024-05-07T08:30:36.158+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T08:30:36.165+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-07T08:30:36.165+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T08:30:36.165+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-07T08:30:36.165+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T08:30:36.165+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama3303250515/cuda_v11/libext_server.so"
+time=2024-05-07T08:30:36.165+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-05-07T08:30:51.475+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+SIGQUIT: quit
+PC=0x4086ce m=0 sigcode=0
+
+goroutine 0 [idle]:
+runtime/internal/syscall.Syscall6()
+	/usr/local/go/src/runtime/internal/syscall/asm_linux_amd64.s:36 +0xe fp=0x7fffffffa410 sp=0x7fffffffa408 pc=0x4086ce
+runtime/internal/syscall.EpollWait(0x5?, {0x7fffffffa4d8?, 0x7fff00000010?, 0xa8f5426b00000001?}, 0x1?, 0x0?)
+	/usr/local/go/src/runtime/internal/syscall/syscall_linux.go:55 +0x45 fp=0x7fffffffa460 sp=0x7fffffffa410 pc=0x408645
+runtime.netpoll(0xc000058000?)
+	/usr/local/go/src/runtime/netpoll_epoll.go:118 +0xcb fp=0x7fffffffaaf0 sp=0x7fffffffa460 pc=0x437beb
+runtime.findRunnable()
+	/usr/local/go/src/runtime/proc.go:3191 +0x825 fp=0x7fffffffac00 sp=0x7fffffffaaf0 pc=0x443b45
+runtime.schedule()
+	/usr/local/go/src/runtime/proc.go:3582 +0xb1 fp=0x7fffffffac38 sp=0x7fffffffac00 pc=0x444cb1
+runtime.park_m(0xc0000071e0?)
+	/usr/local/go/src/runtime/proc.go:3745 +0x11f fp=0x7fffffffac80 sp=0x7fffffffac38 pc=0x4451bf
+traceback: unexpected SPWRITE function runtime.mcall
+runtime.mcall()
+	/usr/local/go/src/runtime/asm_amd64.s:458 +0x4e fp=0x7fffffffac98 sp=0x7fffffffac80 pc=0x46c2ce
+
+goroutine 1 [IO wait, 21 minutes]:
+runtime.gopark(0x480f10?, 0xc000127850?, 0xa0?, 0x78?, 0x4f711d?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000127830 sp=0xc000127810 pc=0x43e7ee
+runtime.netpollblock(0x46c332?, 0x4092a6?, 0x0?)
+	/usr/local/go/src/runtime/netpoll.go:564 +0xf7 fp=0xc000127868 sp=0xc000127830 pc=0x437277
+internal/poll.runtime_pollWait(0x15555538de28, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:343 +0x85 fp=0xc000127888 sp=0xc000127868 pc=0x468a05
+internal/poll.(*pollDesc).wait(0xc0004a8000?, 0x4?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc0001278b0 sp=0xc000127888 pc=0x4efd67
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0004a8000)
+	/usr/local/go/src/internal/poll/fd_unix.go:611 +0x2ac fp=0xc000127958 sp=0xc0001278b0 pc=0x4f524c
+net.(*netFD).accept(0xc0004a8000)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29 fp=0xc000127a10 sp=0xc000127958 pc=0x56be29
+net.(*TCPListener).accept(0xc000522000)
+	/usr/local/go/src/net/tcpsock_posix.go:152 +0x1e fp=0xc000127a38 sp=0xc000127a10 pc=0x580c3e
+net.(*TCPListener).Accept(0xc000522000)
+	/usr/local/go/src/net/tcpsock.go:315 +0x30 fp=0xc000127a68 sp=0xc000127a38 pc=0x57fdf0
+net/http.(*onceCloseListener).Accept(0xc0001e1b00?)
+	<autogenerated>:1 +0x24 fp=0xc000127a80 sp=0xc000127a68 pc=0x6f1ae4
+net/http.(*Server).Serve(0xc000592000, {0x11720d70, 0xc000522000})
+	/usr/local/go/src/net/http/server.go:3056 +0x364 fp=0xc000127bb0 sp=0xc000127a80 pc=0x6cf1a4
+github.com/jmorganca/ollama/server.Serve({0x11720d70, 0xc000522000})
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1048 +0x454 fp=0xc000127c98 sp=0xc000127bb0 pc=0x9a1654
+github.com/jmorganca/ollama/cmd.RunServer(0xc0004a6300?, {0x11b698c0?, 0x4?, 0xadab0a?})
+	/go/src/github.com/jmorganca/ollama/cmd/cmd.go:706 +0x1b9 fp=0xc000127d30 sp=0xc000127c98 pc=0x9b4799
+github.com/spf13/cobra.(*Command).execute(0xc000453800, {0x11b698c0, 0x0, 0x0})
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:940 +0x87c fp=0xc000127e68 sp=0xc000127d30 pc=0x764d9c
+github.com/spf13/cobra.(*Command).ExecuteC(0xc000452c00)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:1068 +0x3a5 fp=0xc000127f20 sp=0xc000127e68 pc=0x7655c5
+github.com/spf13/cobra.(*Command).Execute(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:992
+github.com/spf13/cobra.(*Command).ExecuteContext(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:985
+main.main()
+	/go/src/github.com/jmorganca/ollama/main.go:11 +0x4d fp=0xc000127f40 sp=0xc000127f20 pc=0x9bc90d
+runtime.main()
+	/usr/local/go/src/runtime/proc.go:267 +0x2bb fp=0xc000127fe0 sp=0xc000127f40 pc=0x43e39b
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000127fe8 sp=0xc000127fe0 pc=0x46e2c1
+
+goroutine 2 [force gc (idle), 2 minutes]:
+runtime.gopark(0x498b66910b67f?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000096fa8 sp=0xc000096f88 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.forcegchelper()
+	/usr/local/go/src/runtime/proc.go:322 +0xb3 fp=0xc000096fe0 sp=0xc000096fa8 pc=0x43e673
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000096fe8 sp=0xc000096fe0 pc=0x46e2c1
+created by runtime.init.6 in goroutine 1
+	/usr/local/go/src/runtime/proc.go:310 +0x1a
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x1?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000097778 sp=0xc000097758 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.bgsweep(0x0?)
+	/usr/local/go/src/runtime/mgcsweep.go:321 +0xdf fp=0xc0000977c8 sp=0xc000097778 pc=0x42a73f
+runtime.gcenable.func1()
+	/usr/local/go/src/runtime/mgc.go:200 +0x25 fp=0xc0000977e0 sp=0xc0000977c8 pc=0x41f865
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000977e8 sp=0xc0000977e0 pc=0x46e2c1
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:200 +0x66
+
+goroutine 4 [runnable]:
+runtime.gopark(0x30c28a?, 0x30108f?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000097f70 sp=0xc000097f50 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.(*scavengerState).park(0x11b39c40)
+	/usr/local/go/src/runtime/mgcscavenge.go:425 +0x49 fp=0xc000097fa0 sp=0xc000097f70 pc=0x427f69
+runtime.bgscavenge(0x0?)
+	/usr/local/go/src/runtime/mgcscavenge.go:658 +0x59 fp=0xc000097fc8 sp=0xc000097fa0 pc=0x428519
+runtime.gcenable.func2()
+	/usr/local/go/src/runtime/mgc.go:201 +0x25 fp=0xc000097fe0 sp=0xc000097fc8 pc=0x41f805
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000097fe8 sp=0xc000097fe0 pc=0x46e2c1
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:201 +0xa5
+
+goroutine 5 [finalizer wait, 1450 minutes]:
+runtime.gopark(0xad3ac0?, 0x10043f901?, 0x0?, 0x0?, 0x4469a5?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000096628 sp=0xc000096608 pc=0x43e7ee
+runtime.runfinq()
+	/usr/local/go/src/runtime/mfinal.go:193 +0x107 fp=0xc0000967e0 sp=0xc000096628 pc=0x41e8e7
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000967e8 sp=0xc0000967e0 pc=0x46e2c1
+created by runtime.createfing in goroutine 1
+	/usr/local/go/src/runtime/mfinal.go:163 +0x3d
+
+goroutine 6 [GC worker (idle), 1450 minutes]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000098750 sp=0xc000098730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000987e0 sp=0xc000098750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000987e8 sp=0xc0000987e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 18 [GC worker (idle), 417 minutes]:
+runtime.gopark(0x48200d7ac5ecd?, 0x3?, 0x9?, 0xb?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000092750 sp=0xc000092730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000927e0 sp=0xc000092750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000927e8 sp=0xc0000927e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 7 [GC worker (idle), 118 minutes]:
+runtime.gopark(0x49247ec64a986?, 0x1?, 0x70?, 0xa6?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000098f50 sp=0xc000098f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000098fe0 sp=0xc000098f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000098fe8 sp=0xc000098fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 8 [GC worker (idle), 97 minutes]:
+runtime.gopark(0x493782126b87a?, 0x3?, 0xb0?, 0x45?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000099750 sp=0xc000099730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000997e0 sp=0xc000099750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000997e8 sp=0xc0000997e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 9 [GC worker (idle), 13 minutes]:
+runtime.gopark(0x49806f17b4ff2?, 0x3?, 0xae?, 0x32?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000099f50 sp=0xc000099f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000099fe0 sp=0xc000099f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000099fe8 sp=0xc000099fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 10 [GC worker (idle), 49 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x23?, 0x96?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c0750 sp=0xc0004c0730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004c07e0 sp=0xc0004c0750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c07e8 sp=0xc0004c07e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 11 [GC worker (idle)]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x5a?, 0xdc?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c0f50 sp=0xc0004c0f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004c0fe0 sp=0xc0004c0f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c0fe8 sp=0xc0004c0fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 12 [GC worker (idle), 2 minutes]:
+runtime.gopark(0x498b6691987d1?, 0x1?, 0x2b?, 0xc8?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c1750 sp=0xc0004c1730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004c17e0 sp=0xc0004c1750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c17e8 sp=0xc0004c17e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 13 [GC worker (idle), 417 minutes]:
+runtime.gopark(0x48200d7ac699a?, 0x3?, 0x14?, 0x51?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c1f50 sp=0xc0004c1f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004c1fe0 sp=0xc0004c1f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c1fe8 sp=0xc0004c1fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 34 [GC worker (idle), 417 minutes]:
+runtime.gopark(0x48200d7ac6944?, 0x1?, 0x20?, 0xeb?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bc750 sp=0xc0004bc730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bc7e0 sp=0xc0004bc750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bc7e8 sp=0xc0004bc7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 19 [GC worker (idle), 13 minutes]:
+runtime.gopark(0x49810b0876a6d?, 0x3?, 0x94?, 0x89?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000092f50 sp=0xc000092f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000092fe0 sp=0xc000092f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000092fe8 sp=0xc000092fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 20 [GC worker (idle), 417 minutes]:
+runtime.gopark(0x48200d7ac60ad?, 0x1?, 0x77?, 0x7?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000093750 sp=0xc000093730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000937e0 sp=0xc000093750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000937e8 sp=0xc0000937e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 14 [GC worker (idle), 10 minutes]:
+runtime.gopark(0x4983403522266?, 0x3?, 0x98?, 0x1e?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c2750 sp=0xc0004c2730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004c27e0 sp=0xc0004c2750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c27e8 sp=0xc0004c27e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 15 [GC worker (idle), 10 minutes]:
+runtime.gopark(0x4983403522acc?, 0x1?, 0xe7?, 0x77?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c2f50 sp=0xc0004c2f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004c2fe0 sp=0xc0004c2f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c2fe8 sp=0xc0004c2fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 35 [GC worker (idle)]:
+runtime.gopark(0x498b669198ea6?, 0x1?, 0xe5?, 0x73?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bcf50 sp=0xc0004bcf30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bcfe0 sp=0xc0004bcf50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bcfe8 sp=0xc0004bcfe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 36 [GC worker (idle), 417 minutes]:
+runtime.gopark(0x48200d7ac602b?, 0x1?, 0xb2?, 0x6d?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bd750 sp=0xc0004bd730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bd7e0 sp=0xc0004bd750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bd7e8 sp=0xc0004bd7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 37 [GC worker (idle), 417 minutes]:
+runtime.gopark(0x48200d7ac5f41?, 0x1?, 0x57?, 0x42?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bdf50 sp=0xc0004bdf30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bdfe0 sp=0xc0004bdf50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bdfe8 sp=0xc0004bdfe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 38 [GC worker (idle), 417 minutes]:
+runtime.gopark(0x48200d7ac67f2?, 0x3?, 0x1?, 0x92?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004be750 sp=0xc0004be730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004be7e0 sp=0xc0004be750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004be7e8 sp=0xc0004be7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 39 [GC worker (idle), 2 minutes]:
+runtime.gopark(0x498b6691984fa?, 0x1?, 0x11?, 0xbd?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bef50 sp=0xc0004bef30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004befe0 sp=0xc0004bef50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004befe8 sp=0xc0004befe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 40 [GC worker (idle), 2 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0xda?, 0xa7?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bf750 sp=0xc0004bf730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bf7e0 sp=0xc0004bf750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bf7e8 sp=0xc0004bf7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 50 [select, 1450 minutes, locked to thread]:
+runtime.gopark(0xc000093fa8?, 0x2?, 0x89?, 0xea?, 0xc000093fa4?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000093e38 sp=0xc000093e18 pc=0x43e7ee
+runtime.selectgo(0xc000093fa8, 0xc000093fa0, 0x0?, 0x0, 0x0?, 0x1)
+	/usr/local/go/src/runtime/select.go:327 +0x725 fp=0xc000093f58 sp=0xc000093e38 pc=0x44e325
+runtime.ensureSigM.func1()
+	/usr/local/go/src/runtime/signal_unix.go:1014 +0x19f fp=0xc000093fe0 sp=0xc000093f58 pc=0x46535f
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000093fe8 sp=0xc000093fe0 pc=0x46e2c1
+created by runtime.ensureSigM in goroutine 1
+	/usr/local/go/src/runtime/signal_unix.go:997 +0xc8
+
+goroutine 21 [syscall]:
+runtime.notetsleepg(0xffffffffffffffff?, 0xc000116728?)
+	/usr/local/go/src/runtime/lock_futex.go:236 +0x29 fp=0xc0001167a0 sp=0xc000116768 pc=0x411349
+os/signal.signal_recv()
+	/usr/local/go/src/runtime/sigqueue.go:152 +0x29 fp=0xc0001167c0 sp=0xc0001167a0 pc=0x46ac89
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x13 fp=0xc0001167e0 sp=0xc0001167c0 pc=0x6f4513
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0001167e8 sp=0xc0001167e0 pc=0x46e2c1
+created by os/signal.Notify.func1.1 in goroutine 1
+	/usr/local/go/src/os/signal/signal.go:151 +0x1f
+
+goroutine 22 [runnable]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000116f18 sp=0xc000116ef8 pc=0x43e7ee
+runtime.chanrecv(0xc00052cb40, 0x0, 0x1)
+	/usr/local/go/src/runtime/chan.go:583 +0x3cd fp=0xc000116f90 sp=0xc000116f18 pc=0x40beed
+runtime.chanrecv1(0x0?, 0x0?)
+	/usr/local/go/src/runtime/chan.go:442 +0x12 fp=0xc000116fb8 sp=0xc000116f90 pc=0x40baf2
+github.com/jmorganca/ollama/server.Serve.func2()
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1030 +0x25 fp=0xc000116fe0 sp=0xc000116fb8 pc=0x9a16e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000116fe8 sp=0xc000116fe0 pc=0x46e2c1
+created by github.com/jmorganca/ollama/server.Serve in goroutine 1
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1029 +0x3c7
+
+rax    0xfffffffffffffffc
+rbx    0x4
+rcx    0x4086ce
+rdx    0x80
+rdi    0x4
+rsi    0x7fffffffa4d8
+rbp    0x7fffffffa450
+rsp    0x7fffffffa408
+r8     0x0
+r9     0x0
+r10    0xffffffffffffffff
+r11    0x246
+r12    0x7fffffffa4e0
+r13    0x10
+r14    0x11b3a080
+r15    0xc0001e1c20
+rip    0x4086ce
+rflags 0x246
+cs     0x33
+fs     0x0
+gs     0x0
+time=2024-05-07T15:41:59.449+08:00 level=INFO source=images.go:710 msg="total blobs: 16"
+time=2024-05-07T15:41:59.451+08:00 level=INFO source=images.go:717 msg="total unused blobs removed: 0"
+time=2024-05-07T15:41:59.452+08:00 level=INFO source=routes.go:1021 msg="Listening on 127.0.0.1:11434 (version 0.1.28)"
+time=2024-05-07T15:41:59.452+08:00 level=INFO source=payload_common.go:107 msg="Extracting dynamic libraries..."
+INFO:     Started server process [140235]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+time=2024-05-07T15:42:02.139+08:00 level=INFO source=payload_common.go:146 msg="Dynamic LLM libraries [rocm_v6 cpu cpu_avx cpu_avx2 cuda_v11 rocm_v5]"
+time=2024-05-07T15:42:02.139+08:00 level=INFO source=gpu.go:94 msg="Detecting GPU type"
+time=2024-05-07T15:42:02.139+08:00 level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-05-07T15:42:02.143+08:00 level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/usr/lib/libnvidia-ml.so.535.161.08 /usr/lib64/libnvidia-ml.so.535.161.08 /lib64/libnvidia-ml.so.535.161.08]"
+time=2024-05-07T15:42:02.143+08:00 level=INFO source=gpu.go:323 msg="Unable to load CUDA management library /usr/lib/libnvidia-ml.so.535.161.08: Unable to load /usr/lib/libnvidia-ml.so.535.161.08 library to query for Nvidia GPUs: /usr/lib/libnvidia-ml.so.535.161.08: wrong ELF class: ELFCLASS32"
+time=2024-05-07T15:42:02.160+08:00 level=INFO source=gpu.go:99 msg="Nvidia GPU detected"
+time=2024-05-07T15:42:02.160+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T15:42:02.175+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-07T15:42:04.420+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T15:42:04.420+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-07T15:42:04.420+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T15:42:04.420+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-07T15:42:04.420+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T15:42:04.428+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama2837007891/cuda_v11/libext_server.so"
+time=2024-05-07T15:42:04.428+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-05-07T15:42:48.839+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+time=2024-05-07T18:01:06.255+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T18:01:06.266+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-07T18:01:06.266+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T18:01:06.266+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-07T18:01:06.266+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-07T18:01:06.266+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama2837007891/cuda_v11/libext_server.so"
+time=2024-05-07T18:01:06.266+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-05-07T18:01:21.382+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+time=2024-05-08T08:50:05.778+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-08T08:50:05.788+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-08T08:50:05.788+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-08T08:50:05.788+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-08T08:50:05.788+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-08T08:50:05.788+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama2837007891/cuda_v11/libext_server.so"
+time=2024-05-08T08:50:05.868+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-05-08T08:50:20.800+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+SIGQUIT: quit
+PC=0x4700a1 m=0 sigcode=0
+
+goroutine 0 [idle]:
+runtime.futex()
+	/usr/local/go/src/runtime/sys_linux_amd64.s:557 +0x21 fp=0x7fffffffaa38 sp=0x7fffffffaa30 pc=0x4700a1
+runtime.futexsleep(0x2817add6?, 0xffffaab8?, 0x10044a907?)
+	/usr/local/go/src/runtime/os_linux.go:69 +0x30 fp=0x7fffffffaa88 sp=0x7fffffffaa38 pc=0x437eb0
+runtime.notesleep(0x11b3a7e8)
+	/usr/local/go/src/runtime/lock_futex.go:160 +0x87 fp=0x7fffffffaac0 sp=0x7fffffffaa88 pc=0x411067
+runtime.mPark(...)
+	/usr/local/go/src/runtime/proc.go:1632
+runtime.stopm()
+	/usr/local/go/src/runtime/proc.go:2536 +0x8c fp=0x7fffffffaaf0 sp=0x7fffffffaac0 pc=0x44258c
+runtime.findRunnable()
+	/usr/local/go/src/runtime/proc.go:3229 +0xb9c fp=0x7fffffffac00 sp=0x7fffffffaaf0 pc=0x443ebc
+runtime.schedule()
+	/usr/local/go/src/runtime/proc.go:3582 +0xb1 fp=0x7fffffffac38 sp=0x7fffffffac00 pc=0x444cb1
+runtime.park_m(0xc0004ba1a0?)
+	/usr/local/go/src/runtime/proc.go:3745 +0x11f fp=0x7fffffffac80 sp=0x7fffffffac38 pc=0x4451bf
+traceback: unexpected SPWRITE function runtime.mcall
+runtime.mcall()
+	/usr/local/go/src/runtime/asm_amd64.s:458 +0x4e fp=0x7fffffffac98 sp=0x7fffffffac80 pc=0x46c2ce
+
+goroutine 1 [IO wait, 368 minutes]:
+runtime.gopark(0x480f10?, 0xc0004cd850?, 0xa0?, 0xd8?, 0x4f711d?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004cd830 sp=0xc0004cd810 pc=0x43e7ee
+runtime.netpollblock(0x46c332?, 0x4092a6?, 0x0?)
+	/usr/local/go/src/runtime/netpoll.go:564 +0xf7 fp=0xc0004cd868 sp=0xc0004cd830 pc=0x437277
+internal/poll.runtime_pollWait(0x15555538de28, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:343 +0x85 fp=0xc0004cd888 sp=0xc0004cd868 pc=0x468a05
+internal/poll.(*pollDesc).wait(0xc0004a8000?, 0x4?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc0004cd8b0 sp=0xc0004cd888 pc=0x4efd67
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0004a8000)
+	/usr/local/go/src/internal/poll/fd_unix.go:611 +0x2ac fp=0xc0004cd958 sp=0xc0004cd8b0 pc=0x4f524c
+net.(*netFD).accept(0xc0004a8000)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29 fp=0xc0004cda10 sp=0xc0004cd958 pc=0x56be29
+net.(*TCPListener).accept(0xc000596000)
+	/usr/local/go/src/net/tcpsock_posix.go:152 +0x1e fp=0xc0004cda38 sp=0xc0004cda10 pc=0x580c3e
+net.(*TCPListener).Accept(0xc000596000)
+	/usr/local/go/src/net/tcpsock.go:315 +0x30 fp=0xc0004cda68 sp=0xc0004cda38 pc=0x57fdf0
+net/http.(*onceCloseListener).Accept(0xc000136d80?)
+	<autogenerated>:1 +0x24 fp=0xc0004cda80 sp=0xc0004cda68 pc=0x6f1ae4
+net/http.(*Server).Serve(0xc000130000, {0x11720d70, 0xc000596000})
+	/usr/local/go/src/net/http/server.go:3056 +0x364 fp=0xc0004cdbb0 sp=0xc0004cda80 pc=0x6cf1a4
+github.com/jmorganca/ollama/server.Serve({0x11720d70, 0xc000596000})
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1048 +0x454 fp=0xc0004cdc98 sp=0xc0004cdbb0 pc=0x9a1654
+github.com/jmorganca/ollama/cmd.RunServer(0xc0004a6300?, {0x11b698c0?, 0x4?, 0xadab0a?})
+	/go/src/github.com/jmorganca/ollama/cmd/cmd.go:706 +0x1b9 fp=0xc0004cdd30 sp=0xc0004cdc98 pc=0x9b4799
+github.com/spf13/cobra.(*Command).execute(0xc000479800, {0x11b698c0, 0x0, 0x0})
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:940 +0x87c fp=0xc0004cde68 sp=0xc0004cdd30 pc=0x764d9c
+github.com/spf13/cobra.(*Command).ExecuteC(0xc000478c00)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:1068 +0x3a5 fp=0xc0004cdf20 sp=0xc0004cde68 pc=0x7655c5
+github.com/spf13/cobra.(*Command).Execute(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:992
+github.com/spf13/cobra.(*Command).ExecuteContext(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:985
+main.main()
+	/go/src/github.com/jmorganca/ollama/main.go:11 +0x4d fp=0xc0004cdf40 sp=0xc0004cdf20 pc=0x9bc90d
+runtime.main()
+	/usr/local/go/src/runtime/proc.go:267 +0x2bb fp=0xc0004cdfe0 sp=0xc0004cdf40 pc=0x43e39b
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004cdfe8 sp=0xc0004cdfe0 pc=0x46e2c1
+
+goroutine 2 [force gc (idle), 3 minutes]:
+runtime.gopark(0x4e88fab461234?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000096fa8 sp=0xc000096f88 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.forcegchelper()
+	/usr/local/go/src/runtime/proc.go:322 +0xb3 fp=0xc000096fe0 sp=0xc000096fa8 pc=0x43e673
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000096fe8 sp=0xc000096fe0 pc=0x46e2c1
+created by runtime.init.6 in goroutine 1
+	/usr/local/go/src/runtime/proc.go:310 +0x1a
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x1?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000097778 sp=0xc000097758 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.bgsweep(0x0?)
+	/usr/local/go/src/runtime/mgcsweep.go:321 +0xdf fp=0xc0000977c8 sp=0xc000097778 pc=0x42a73f
+runtime.gcenable.func1()
+	/usr/local/go/src/runtime/mgc.go:200 +0x25 fp=0xc0000977e0 sp=0xc0000977c8 pc=0x41f865
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000977e8 sp=0xc0000977e0 pc=0x46e2c1
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:200 +0x66
+
+goroutine 4 [GC scavenge wait]:
+runtime.gopark(0x3241ae?, 0x2c95e2?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000097f70 sp=0xc000097f50 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.(*scavengerState).park(0x11b39c40)
+	/usr/local/go/src/runtime/mgcscavenge.go:425 +0x49 fp=0xc000097fa0 sp=0xc000097f70 pc=0x427f69
+runtime.bgscavenge(0x0?)
+	/usr/local/go/src/runtime/mgcscavenge.go:658 +0x59 fp=0xc000097fc8 sp=0xc000097fa0 pc=0x428519
+runtime.gcenable.func2()
+	/usr/local/go/src/runtime/mgc.go:201 +0x25 fp=0xc000097fe0 sp=0xc000097fc8 pc=0x41f805
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000097fe8 sp=0xc000097fe0 pc=0x46e2c1
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:201 +0xa5
+
+goroutine 5 [finalizer wait, 1449 minutes]:
+runtime.gopark(0xad3ac0?, 0x10043f901?, 0x0?, 0x0?, 0x4469a5?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000096628 sp=0xc000096608 pc=0x43e7ee
+runtime.runfinq()
+	/usr/local/go/src/runtime/mfinal.go:193 +0x107 fp=0xc0000967e0 sp=0xc000096628 pc=0x41e8e7
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000967e8 sp=0xc0000967e0 pc=0x46e2c1
+created by runtime.createfing in goroutine 1
+	/usr/local/go/src/runtime/mfinal.go:163 +0x3d
+
+goroutine 6 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000098750 sp=0xc000098730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000987e0 sp=0xc000098750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000987e8 sp=0xc0000987e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 7 [GC worker (idle), 101 minutes]:
+runtime.gopark(0x4e325223a9a11?, 0x1?, 0x7d?, 0xc8?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000098f50 sp=0xc000098f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000098fe0 sp=0xc000098f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000098fe8 sp=0xc000098fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 8 [GC worker (idle), 20 minutes]:
+runtime.gopark(0x4e787a475f15c?, 0x1?, 0x13?, 0x5d?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000099750 sp=0xc000099730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000997e0 sp=0xc000099750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000997e8 sp=0xc0000997e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 9 [GC worker (idle)]:
+runtime.gopark(0x4e88fab4e11c5?, 0x1?, 0xaf?, 0xbf?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000099f50 sp=0xc000099f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000099fe0 sp=0xc000099f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000099fe8 sp=0xc000099fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 10 [GC worker (idle)]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0xff?, 0x30?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000092750 sp=0xc000092730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000927e0 sp=0xc000092750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000927e8 sp=0xc0000927e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 11 [GC worker (idle), 20 minutes]:
+runtime.gopark(0x4e787a475fd31?, 0x1?, 0x90?, 0xba?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000092f50 sp=0xc000092f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000092fe0 sp=0xc000092f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000092fe8 sp=0xc000092fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 12 [GC worker (idle), 101 minutes]:
+runtime.gopark(0x4e325223aadf2?, 0x3?, 0x86?, 0x75?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000093750 sp=0xc000093730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000937e0 sp=0xc000093750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000937e8 sp=0xc0000937e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 13 [GC worker (idle), 21 minutes]:
+runtime.gopark(0x4e787a475f34f?, 0x1?, 0xa?, 0x5f?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000093f50 sp=0xc000093f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000093fe0 sp=0xc000093f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000093fe8 sp=0xc000093fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 14 [GC worker (idle)]:
+runtime.gopark(0x4e88fab4e0293?, 0x1?, 0xe4?, 0xec?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000094750 sp=0xc000094730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000947e0 sp=0xc000094750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000947e8 sp=0xc0000947e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 15 [GC worker (idle), 421 minutes]:
+runtime.gopark(0x4d1a5bdeb167a?, 0x1?, 0x6?, 0xaf?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000094f50 sp=0xc000094f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000094fe0 sp=0xc000094f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000094fe8 sp=0xc000094fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 16 [GC worker (idle), 20 minutes]:
+runtime.gopark(0x4e787a475f7fd?, 0x1?, 0xda?, 0x96?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000095750 sp=0xc000095730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000957e0 sp=0xc000095750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000957e8 sp=0xc0000957e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 18 [GC worker (idle), 10 minutes]:
+runtime.gopark(0x4e81afdf58739?, 0x1?, 0x96?, 0xa6?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000095f50 sp=0xc000095f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000095fe0 sp=0xc000095f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000095fe8 sp=0xc000095fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 19 [GC worker (idle), 421 minutes]:
+runtime.gopark(0x4d1a5bdeb16fe?, 0x3?, 0xa0?, 0x9b?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c0750 sp=0xc0004c0730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004c07e0 sp=0xc0004c0750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c07e8 sp=0xc0004c07e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 34 [GC worker (idle), 20 minutes]:
+runtime.gopark(0x4e787a475f86b?, 0x1?, 0xb2?, 0xdd?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bc750 sp=0xc0004bc730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bc7e0 sp=0xc0004bc750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bc7e8 sp=0xc0004bc7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 50 [GC worker (idle), 3 minutes]:
+runtime.gopark(0x4e88fab4e010a?, 0x1?, 0xb5?, 0x75?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000508750 sp=0xc000508730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005087e0 sp=0xc000508750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005087e8 sp=0xc0005087e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 35 [GC worker (idle), 10 minutes]:
+runtime.gopark(0x4e81afdf58a3b?, 0x1?, 0xb0?, 0xc5?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bcf50 sp=0xc0004bcf30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bcfe0 sp=0xc0004bcf50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bcfe8 sp=0xc0004bcfe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 36 [GC worker (idle), 212 minutes]:
+runtime.gopark(0x4dd112d4367f2?, 0x3?, 0x2e?, 0x67?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bd750 sp=0xc0004bd730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bd7e0 sp=0xc0004bd750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bd7e8 sp=0xc0004bd7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 20 [GC worker (idle)]:
+runtime.gopark(0x4e88fab4dff00?, 0x1?, 0x98?, 0x9f?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c0f50 sp=0xc0004c0f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004c0fe0 sp=0xc0004c0f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c0fe8 sp=0xc0004c0fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 37 [GC worker (idle), 101 minutes]:
+runtime.gopark(0x4e325223a9a8c?, 0x3?, 0xee?, 0x7e?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004bdf50 sp=0xc0004bdf30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004bdfe0 sp=0xc0004bdf50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004bdfe8 sp=0xc0004bdfe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 38 [GC worker (idle), 11 minutes]:
+runtime.gopark(0x4e80a3e72e514?, 0x1?, 0x40?, 0xc8?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004be750 sp=0xc0004be730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0004be7e0 sp=0xc0004be750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004be7e8 sp=0xc0004be7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 39 [select, 1449 minutes, locked to thread]:
+runtime.gopark(0xc0004c1fa8?, 0x2?, 0x89?, 0xea?, 0xc0004c1fa4?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0004c1e38 sp=0xc0004c1e18 pc=0x43e7ee
+runtime.selectgo(0xc0004c1fa8, 0xc0004c1fa0, 0x0?, 0x0, 0x0?, 0x1)
+	/usr/local/go/src/runtime/select.go:327 +0x725 fp=0xc0004c1f58 sp=0xc0004c1e38 pc=0x44e325
+runtime.ensureSigM.func1()
+	/usr/local/go/src/runtime/signal_unix.go:1014 +0x19f fp=0xc0004c1fe0 sp=0xc0004c1f58 pc=0x46535f
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0004c1fe8 sp=0xc0004c1fe0 pc=0x46e2c1
+created by runtime.ensureSigM in goroutine 1
+	/usr/local/go/src/runtime/signal_unix.go:997 +0xc8
+
+goroutine 21 [syscall]:
+runtime.notetsleepg(0xffffffffffffffff?, 0xc000508f28?)
+	/usr/local/go/src/runtime/lock_futex.go:236 +0x29 fp=0xc000508fa0 sp=0xc000508f68 pc=0x411349
+os/signal.signal_recv()
+	/usr/local/go/src/runtime/sigqueue.go:152 +0x29 fp=0xc000508fc0 sp=0xc000508fa0 pc=0x46ac89
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x13 fp=0xc000508fe0 sp=0xc000508fc0 pc=0x6f4513
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000508fe8 sp=0xc000508fe0 pc=0x46e2c1
+created by os/signal.Notify.func1.1 in goroutine 1
+	/usr/local/go/src/os/signal/signal.go:151 +0x1f
+
+goroutine 22 [runnable]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000509718 sp=0xc0005096f8 pc=0x43e7ee
+runtime.chanrecv(0xc0001d5860, 0x0, 0x1)
+	/usr/local/go/src/runtime/chan.go:583 +0x3cd fp=0xc000509790 sp=0xc000509718 pc=0x40beed
+runtime.chanrecv1(0x0?, 0x0?)
+	/usr/local/go/src/runtime/chan.go:442 +0x12 fp=0xc0005097b8 sp=0xc000509790 pc=0x40baf2
+github.com/jmorganca/ollama/server.Serve.func2()
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1030 +0x25 fp=0xc0005097e0 sp=0xc0005097b8 pc=0x9a16e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005097e8 sp=0xc0005097e0 pc=0x46e2c1
+created by github.com/jmorganca/ollama/server.Serve in goroutine 1
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1029 +0x3c7
+
+rax    0xca
+rbx    0x0
+rcx    0x4700a3
+rdx    0x0
+rdi    0x11b3a7e8
+rsi    0x80
+rbp    0x7fffffffaa78
+rsp    0x7fffffffaa30
+r8     0x0
+r9     0x0
+r10    0x0
+r11    0x286
+r12    0x9
+r13    0x8
+r14    0x11b3a080
+r15    0x1
+rip    0x4700a1
+rflags 0x286
+cs     0x33
+fs     0x0
+gs     0x0
+time=2024-05-08T15:57:58.139+08:00 level=INFO source=images.go:710 msg="total blobs: 16"
+time=2024-05-08T15:57:58.140+08:00 level=INFO source=images.go:717 msg="total unused blobs removed: 0"
+time=2024-05-08T15:57:58.141+08:00 level=INFO source=routes.go:1021 msg="Listening on 127.0.0.1:11434 (version 0.1.28)"
+time=2024-05-08T15:57:58.141+08:00 level=INFO source=payload_common.go:107 msg="Extracting dynamic libraries..."
+INFO:     Started server process [3548886]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+time=2024-05-08T15:58:00.771+08:00 level=INFO source=payload_common.go:146 msg="Dynamic LLM libraries [cpu_avx rocm_v5 cpu_avx2 cpu rocm_v6 cuda_v11]"
+time=2024-05-08T15:58:00.771+08:00 level=INFO source=gpu.go:94 msg="Detecting GPU type"
+time=2024-05-08T15:58:00.771+08:00 level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-05-08T15:58:00.775+08:00 level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/usr/lib/libnvidia-ml.so.535.161.08 /usr/lib64/libnvidia-ml.so.535.161.08 /lib64/libnvidia-ml.so.535.161.08]"
+time=2024-05-08T15:58:00.776+08:00 level=INFO source=gpu.go:323 msg="Unable to load CUDA management library /usr/lib/libnvidia-ml.so.535.161.08: Unable to load /usr/lib/libnvidia-ml.so.535.161.08 library to query for Nvidia GPUs: /usr/lib/libnvidia-ml.so.535.161.08: wrong ELF class: ELFCLASS32"
+time=2024-05-08T15:58:00.795+08:00 level=INFO source=gpu.go:99 msg="Nvidia GPU detected"
+time=2024-05-08T15:58:00.795+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-08T15:58:00.808+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-08T15:58:02.959+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-08T15:58:02.960+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-08T15:58:02.960+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-08T15:58:02.960+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 7.0"
+time=2024-05-08T15:58:02.960+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-08T15:58:02.967+08:00 level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama374733314/cuda_v11/libext_server.so"
+time=2024-05-08T15:58:02.968+08:00 level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 2 CUDA devices:
+  Device 0: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+  Device 1: Tesla V100-SXM2-32GB, compute capability 7.0, VMM: yes
+llama_model_loader: loaded meta data with 21 key-value pairs and 723 tensors from /home/qha2sgh/.ollama/models/blobs/sha256:4fe022a8902336d3c452c88f7aca5590f5b5b02ccfd06320fdefab02412e1f0b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-70B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 80
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 8192
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 28672
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 64
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type q4_0:  561 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 8192
+llm_load_print_meta: n_head           = 64
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 80
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 28672
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 70B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 70.55 B
+llm_load_print_meta: model size       = 37.22 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-70B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_tensors: ggml ctx size =    0.83 MiB
+llm_load_tensors: offloading 80 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 81/81 layers to GPU
+llm_load_tensors:        CPU buffer size =   563.62 MiB
+llm_load_tensors:      CUDA0 buffer size = 18821.56 MiB
+llm_load_tensors:      CUDA1 buffer size = 18725.42 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:      CUDA0 KV buffer size =   328.00 MiB
+llama_kv_cache_init:      CUDA1 KV buffer size =   312.00 MiB
+llama_new_context_with_model: KV self size  =  640.00 MiB, K (f16):  320.00 MiB, V (f16):  320.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    21.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   324.00 MiB
+llama_new_context_with_model:      CUDA1 compute buffer size =   324.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+llama_new_context_with_model: graph splits (measure): 3
+time=2024-05-08T15:58:47.597+08:00 level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3548886]
+time=2024-05-09T01:53:15.377+08:00 level=INFO source=images.go:710 msg="total blobs: 16"
+time=2024-05-09T01:53:15.381+08:00 level=INFO source=images.go:717 msg="total unused blobs removed: 0"
+time=2024-05-09T01:53:15.382+08:00 level=INFO source=routes.go:1021 msg="Listening on 127.0.0.1:11434 (version 0.1.28)"
+time=2024-05-09T01:53:15.382+08:00 level=INFO source=payload_common.go:107 msg="Extracting dynamic libraries..."
+INFO:     Started server process [3119350]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+time=2024-05-09T01:53:19.788+08:00 level=INFO source=payload_common.go:146 msg="Dynamic LLM libraries [rocm_v6 cpu_avx cpu_avx2 cpu cuda_v11 rocm_v5]"
+time=2024-05-09T01:53:19.788+08:00 level=INFO source=gpu.go:94 msg="Detecting GPU type"
+time=2024-05-09T01:53:19.788+08:00 level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-05-09T01:53:19.793+08:00 level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/usr/lib/libnvidia-ml.so.535.161.08 /usr/lib64/libnvidia-ml.so.535.161.08 /lib64/libnvidia-ml.so.535.161.08]"
+time=2024-05-09T01:53:19.793+08:00 level=INFO source=gpu.go:323 msg="Unable to load CUDA management library /usr/lib/libnvidia-ml.so.535.161.08: Unable to load /usr/lib/libnvidia-ml.so.535.161.08 library to query for Nvidia GPUs: /usr/lib/libnvidia-ml.so.535.161.08: wrong ELF class: ELFCLASS32"
+time=2024-05-09T01:53:19.821+08:00 level=INFO source=gpu.go:99 msg="Nvidia GPU detected"
+time=2024-05-09T01:53:19.821+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-09T01:53:19.841+08:00 level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 8.0"
+SIGQUIT: quit
+PC=0x4700a1 m=0 sigcode=0
+
+goroutine 0 [idle]:
+runtime.futex()
+	/usr/local/go/src/runtime/sys_linux_amd64.s:557 +0x21 fp=0x7fffffffab20 sp=0x7fffffffab18 pc=0x4700a1
+runtime.futexsleep(0x7fffffffab98?, 0x442bd3?, 0x7fffffffab98?)
+	/usr/local/go/src/runtime/os_linux.go:69 +0x30 fp=0x7fffffffab70 sp=0x7fffffffab20 pc=0x437eb0
+runtime.notesleep(0x11b3a7e8)
+	/usr/local/go/src/runtime/lock_futex.go:160 +0x87 fp=0x7fffffffaba8 sp=0x7fffffffab70 pc=0x411067
+runtime.mPark(...)
+	/usr/local/go/src/runtime/proc.go:1632
+runtime.stoplockedm()
+	/usr/local/go/src/runtime/proc.go:2780 +0x73 fp=0x7fffffffac00 sp=0x7fffffffaba8 pc=0x442df3
+runtime.schedule()
+	/usr/local/go/src/runtime/proc.go:3561 +0x3a fp=0x7fffffffac38 sp=0x7fffffffac00 pc=0x444c3a
+runtime.park_m(0xc000503d40?)
+	/usr/local/go/src/runtime/proc.go:3745 +0x11f fp=0x7fffffffac80 sp=0x7fffffffac38 pc=0x4451bf
+traceback: unexpected SPWRITE function runtime.mcall
+runtime.mcall()
+	/usr/local/go/src/runtime/asm_amd64.s:458 +0x4e fp=0x7fffffffac98 sp=0x7fffffffac80 pc=0x46c2ce
+
+goroutine 1 [IO wait, 1449 minutes]:
+runtime.gopark(0xc0001f3898?, 0x4128a5?, 0xa0?, 0x38?, 0x4f711d?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc0001f3830 sp=0xc0001f3810 pc=0x43e7ee
+runtime.netpollblock(0x15550c99a958?, 0x4092a6?, 0x0?)
+	/usr/local/go/src/runtime/netpoll.go:564 +0xf7 fp=0xc0001f3868 sp=0xc0001f3830 pc=0x437277
+internal/poll.runtime_pollWait(0x155555393e28, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:343 +0x85 fp=0xc0001f3888 sp=0xc0001f3868 pc=0x468a05
+internal/poll.(*pollDesc).wait(0xc0004a8000?, 0xc0001f3970?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27 fp=0xc0001f38b0 sp=0xc0001f3888 pc=0x4efd67
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0004a8000)
+	/usr/local/go/src/internal/poll/fd_unix.go:611 +0x2ac fp=0xc0001f3958 sp=0xc0001f38b0 pc=0x4f524c
+net.(*netFD).accept(0xc0004a8000)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29 fp=0xc0001f3a10 sp=0xc0001f3958 pc=0x56be29
+net.(*TCPListener).accept(0xc00047b5c0)
+	/usr/local/go/src/net/tcpsock_posix.go:152 +0x1e fp=0xc0001f3a38 sp=0xc0001f3a10 pc=0x580c3e
+net.(*TCPListener).Accept(0xc00047b5c0)
+	/usr/local/go/src/net/tcpsock.go:315 +0x30 fp=0xc0001f3a68 sp=0xc0001f3a38 pc=0x57fdf0
+net/http.(*onceCloseListener).Accept(0x117225b0?)
+	<autogenerated>:1 +0x24 fp=0xc0001f3a80 sp=0xc0001f3a68 pc=0x6f1ae4
+net/http.(*Server).Serve(0xc0004ca000, {0x11720d70, 0xc00047b5c0})
+	/usr/local/go/src/net/http/server.go:3056 +0x364 fp=0xc0001f3bb0 sp=0xc0001f3a80 pc=0x6cf1a4
+github.com/jmorganca/ollama/server.Serve({0x11720d70, 0xc00047b5c0})
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1048 +0x454 fp=0xc0001f3c98 sp=0xc0001f3bb0 pc=0x9a1654
+github.com/jmorganca/ollama/cmd.RunServer(0xc0004a6300?, {0x11b698c0?, 0x4?, 0xadab0a?})
+	/go/src/github.com/jmorganca/ollama/cmd/cmd.go:706 +0x1b9 fp=0xc0001f3d30 sp=0xc0001f3c98 pc=0x9b4799
+github.com/spf13/cobra.(*Command).execute(0xc000437800, {0x11b698c0, 0x0, 0x0})
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:940 +0x87c fp=0xc0001f3e68 sp=0xc0001f3d30 pc=0x764d9c
+github.com/spf13/cobra.(*Command).ExecuteC(0xc000436c00)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:1068 +0x3a5 fp=0xc0001f3f20 sp=0xc0001f3e68 pc=0x7655c5
+github.com/spf13/cobra.(*Command).Execute(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:992
+github.com/spf13/cobra.(*Command).ExecuteContext(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:985
+main.main()
+	/go/src/github.com/jmorganca/ollama/main.go:11 +0x4d fp=0xc0001f3f40 sp=0xc0001f3f20 pc=0x9bc90d
+runtime.main()
+	/usr/local/go/src/runtime/proc.go:267 +0x2bb fp=0xc0001f3fe0 sp=0xc0001f3f40 pc=0x43e39b
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0001f3fe8 sp=0xc0001f3fe0 pc=0x46e2c1
+
+goroutine 2 [force gc (idle), 3 minutes]:
+runtime.gopark(0x55873a7bb6159?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000096fa8 sp=0xc000096f88 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.forcegchelper()
+	/usr/local/go/src/runtime/proc.go:322 +0xb3 fp=0xc000096fe0 sp=0xc000096fa8 pc=0x43e673
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000096fe8 sp=0xc000096fe0 pc=0x46e2c1
+created by runtime.init.6 in goroutine 1
+	/usr/local/go/src/runtime/proc.go:310 +0x1a
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x1?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000097778 sp=0xc000097758 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.bgsweep(0x0?)
+	/usr/local/go/src/runtime/mgcsweep.go:321 +0xdf fp=0xc0000977c8 sp=0xc000097778 pc=0x42a73f
+runtime.gcenable.func1()
+	/usr/local/go/src/runtime/mgc.go:200 +0x25 fp=0xc0000977e0 sp=0xc0000977c8 pc=0x41f865
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000977e8 sp=0xc0000977e0 pc=0x46e2c1
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:200 +0x66
+
+goroutine 4 [GC scavenge wait]:
+runtime.gopark(0x6d1bf3?, 0x5f284a?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000097f70 sp=0xc000097f50 pc=0x43e7ee
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:404
+runtime.(*scavengerState).park(0x11b39c40)
+	/usr/local/go/src/runtime/mgcscavenge.go:425 +0x49 fp=0xc000097fa0 sp=0xc000097f70 pc=0x427f69
+runtime.bgscavenge(0x0?)
+	/usr/local/go/src/runtime/mgcscavenge.go:658 +0x59 fp=0xc000097fc8 sp=0xc000097fa0 pc=0x428519
+runtime.gcenable.func2()
+	/usr/local/go/src/runtime/mgc.go:201 +0x25 fp=0xc000097fe0 sp=0xc000097fc8 pc=0x41f805
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000097fe8 sp=0xc000097fe0 pc=0x46e2c1
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:201 +0xa5
+
+goroutine 5 [finalizer wait, 1450 minutes]:
+runtime.gopark(0xad3ac0?, 0x10043f901?, 0x0?, 0x0?, 0x4469a5?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000096628 sp=0xc000096608 pc=0x43e7ee
+runtime.runfinq()
+	/usr/local/go/src/runtime/mfinal.go:193 +0x107 fp=0xc0000967e0 sp=0xc000096628 pc=0x41e8e7
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000967e8 sp=0xc0000967e0 pc=0x46e2c1
+created by runtime.createfing in goroutine 1
+	/usr/local/go/src/runtime/mfinal.go:163 +0x3d
+
+goroutine 6 [GC worker (idle), 1450 minutes]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000098750 sp=0xc000098730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000987e0 sp=0xc000098750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000987e8 sp=0xc0000987e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 18 [GC worker (idle), 1450 minutes]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000092750 sp=0xc000092730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000927e0 sp=0xc000092750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000927e8 sp=0xc0000927e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 34 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0cedbb?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000508750 sp=0xc000508730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005087e0 sp=0xc000508750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005087e8 sp=0xc0005087e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 35 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0cea61?, 0x3?, 0x87?, 0x71?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000508f50 sp=0xc000508f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000508fe0 sp=0xc000508f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000508fe8 sp=0xc000508fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 36 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0cf585?, 0x3?, 0x77?, 0xe?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000509750 sp=0xc000509730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005097e0 sp=0xc000509750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005097e8 sp=0xc0005097e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 37 [GC worker (idle), 867 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x1?, 0x87?, 0x24?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000509f50 sp=0xc000509f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000509fe0 sp=0xc000509f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000509fe8 sp=0xc000509fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 38 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0d06aa?, 0x3?, 0xde?, 0xa?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc00050a750 sp=0xc00050a730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc00050a7e0 sp=0xc00050a750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc00050a7e8 sp=0xc00050a7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 39 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0ce425?, 0x1?, 0xa4?, 0x7f?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc00050af50 sp=0xc00050af30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc00050afe0 sp=0xc00050af50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc00050afe8 sp=0xc00050afe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 40 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0cea96?, 0x3?, 0xe?, 0x4b?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc00050b750 sp=0xc00050b730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc00050b7e0 sp=0xc00050b750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc00050b7e8 sp=0xc00050b7e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 41 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x11b6b5e0?, 0x3?, 0xda?, 0x68?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc00050bf50 sp=0xc00050bf30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc00050bfe0 sp=0xc00050bf50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc00050bfe8 sp=0xc00050bfe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 42 [GC worker (idle)]:
+runtime.gopark(0x55873a7bf3fa6?, 0x1?, 0xb4?, 0x4f?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000504750 sp=0xc000504730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005047e0 sp=0xc000504750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005047e8 sp=0xc0005047e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 43 [GC worker (idle), 3 minutes]:
+runtime.gopark(0x55873a7bf4640?, 0x1?, 0xb2?, 0xc9?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000504f50 sp=0xc000504f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000504fe0 sp=0xc000504f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000504fe8 sp=0xc000504fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 44 [GC worker (idle), 3 minutes]:
+runtime.gopark(0x55873a7c02212?, 0x1?, 0x7e?, 0x23?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000505750 sp=0xc000505730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005057e0 sp=0xc000505750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005057e8 sp=0xc0005057e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 45 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0cef7b?, 0x3?, 0x7e?, 0x74?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000505f50 sp=0xc000505f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000505fe0 sp=0xc000505f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000505fe8 sp=0xc000505fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 46 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0ceeff?, 0x1?, 0xda?, 0x24?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000506750 sp=0xc000506730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005067e0 sp=0xc000506750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005067e8 sp=0xc0005067e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 47 [GC worker (idle), 3 minutes]:
+runtime.gopark(0x55873a7bf3345?, 0x1?, 0x1f?, 0xc8?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000506f50 sp=0xc000506f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000506fe0 sp=0xc000506f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000506fe8 sp=0xc000506fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 48 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0cee3b?, 0x1?, 0x98?, 0x33?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000507750 sp=0xc000507730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0005077e0 sp=0xc000507750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005077e8 sp=0xc0005077e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 7 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0cefc3?, 0x3?, 0xb5?, 0x1?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000098f50 sp=0xc000098f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000098fe0 sp=0xc000098f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000098fe8 sp=0xc000098fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 8 [GC worker (idle), 1449 minutes]:
+runtime.gopark(0x5096bee0cec93?, 0x1?, 0x3e?, 0x57?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000099750 sp=0xc000099730 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc0000997e0 sp=0xc000099750 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0000997e8 sp=0xc0000997e0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 49 [GC worker (idle), 3 minutes]:
+runtime.gopark(0x55873a7bf3f96?, 0x1?, 0x37?, 0x28?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000507f50 sp=0xc000507f30 pc=0x43e7ee
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1293 +0xe5 fp=0xc000507fe0 sp=0xc000507f50 pc=0x4213e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000507fe8 sp=0xc000507fe0 pc=0x46e2c1
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1217 +0x1c
+
+goroutine 9 [select, 1450 minutes, locked to thread]:
+runtime.gopark(0xc000092fa8?, 0x2?, 0x89?, 0xea?, 0xc000092fa4?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000092e38 sp=0xc000092e18 pc=0x43e7ee
+runtime.selectgo(0xc000092fa8, 0xc000092fa0, 0x0?, 0x0, 0x0?, 0x1)
+	/usr/local/go/src/runtime/select.go:327 +0x725 fp=0xc000092f58 sp=0xc000092e38 pc=0x44e325
+runtime.ensureSigM.func1()
+	/usr/local/go/src/runtime/signal_unix.go:1014 +0x19f fp=0xc000092fe0 sp=0xc000092f58 pc=0x46535f
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000092fe8 sp=0xc000092fe0 pc=0x46e2c1
+created by runtime.ensureSigM in goroutine 1
+	/usr/local/go/src/runtime/signal_unix.go:997 +0xc8
+
+goroutine 50 [syscall]:
+runtime.notetsleepg(0xffffffffffffffff?, 0xc000514728?)
+	/usr/local/go/src/runtime/lock_futex.go:236 +0x29 fp=0xc0005147a0 sp=0xc000514768 pc=0x411349
+os/signal.signal_recv()
+	/usr/local/go/src/runtime/sigqueue.go:152 +0x29 fp=0xc0005147c0 sp=0xc0005147a0 pc=0x46ac89
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x13 fp=0xc0005147e0 sp=0xc0005147c0 pc=0x6f4513
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc0005147e8 sp=0xc0005147e0 pc=0x46e2c1
+created by os/signal.Notify.func1.1 in goroutine 1
+	/usr/local/go/src/os/signal/signal.go:151 +0x1f
+
+goroutine 51 [runnable]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:398 +0xce fp=0xc000514f18 sp=0xc000514ef8 pc=0x43e7ee
+runtime.chanrecv(0xc00060ec00, 0x0, 0x1)
+	/usr/local/go/src/runtime/chan.go:583 +0x3cd fp=0xc000514f90 sp=0xc000514f18 pc=0x40beed
+runtime.chanrecv1(0x0?, 0x0?)
+	/usr/local/go/src/runtime/chan.go:442 +0x12 fp=0xc000514fb8 sp=0xc000514f90 pc=0x40baf2
+github.com/jmorganca/ollama/server.Serve.func2()
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1030 +0x25 fp=0xc000514fe0 sp=0xc000514fb8 pc=0x9a16e5
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1650 +0x1 fp=0xc000514fe8 sp=0xc000514fe0 pc=0x46e2c1
+created by github.com/jmorganca/ollama/server.Serve in goroutine 1
+	/go/src/github.com/jmorganca/ollama/server/routes.go:1029 +0x3c7
+
+rax    0xca
+rbx    0x0
+rcx    0x4700a3
+rdx    0x0
+rdi    0x11b3a7e8
+rsi    0x80
+rbp    0x7fffffffab60
+rsp    0x7fffffffab18
+r8     0x0
+r9     0x0
+r10    0x0
+r11    0x286
+r12    0x7fffffffab38
+r13    0xc000092fa4
+r14    0x11b3a080
+r15    0x22
+rip    0x4700a1
+rflags 0x286
+cs     0x33
+fs     0x0
+gs     0x0

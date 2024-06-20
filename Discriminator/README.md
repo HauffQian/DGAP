@@ -40,6 +40,6 @@ python glue_main.py \
 
 ## Acknowledgments
 
-This code is based on resources from the following project:
+Part of training code is based on resources from the following project:
 
 - [redco](https://github.com/tanyuqian/redco)

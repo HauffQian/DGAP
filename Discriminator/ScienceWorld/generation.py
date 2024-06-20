@@ -10,7 +10,7 @@ from scienceworld import ScienceWorldEnv
 import json
 from tqdm import trange
 from data_utils.data_utils import add_current_place, add_current_objects, sanitizeStr, formalize_action
-from data_utils.data_utils import compose_instance_v1, compose_instance_v1_1, compose_instance_v2, compose_instance_v3, compose_instance_v4
+from data_utils.data_utils import compose_instance_v1, compose_instance_v1f_1, compose_instance_v2, compose_instance_v3, compose_instance_v4
 from eval_utils import load_model, findValidActionNew, load_variation, get_model_output, findValidActionWithSystem2, getFilteredValidActions, sbert_search, clean_look, is_action_failed 
 from eval_utils import try_to_replace, rooms, clean_history, get_current_room, clean_obj_name, focus_on_count, rank_candidates_by_common_words, gpt_select_valid
 from collections import defaultdict

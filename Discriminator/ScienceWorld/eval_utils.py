@@ -827,14 +827,11 @@ def clean_history(recent_actions, recent_obs, recent_score, recent_reward, recen
 def get_model_output(args, input_str, tokenizer, lm_model, device, logger): 
     input_ids = tokenizer(input_str, return_tensors="pt", max_length=args["max_input_len"] , truncation=True).input_ids
 
-    sample_outputs = lm_model.generate(
-        input_ids.to(device),
-        max_length=50,
-        num_return_sequences=args['beams'],
-        num_beams=args['beams'],
-    )
- 
-    lm_pred = sample_outputs
+    url = 'http://10.197.247.61:8000/api/get-reponses'
+    payload = {"query": ask}
+    output = requests.post(url, json = payload)
+
+    lm_pred = outputs
 
     # Take the first prediction that is not "look around"
     logger.info("Top N Predictions:")

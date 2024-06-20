@@ -1,4 +1,4 @@
-## Classification/Regression
+## Regression Task
 
 This example implements regression with Redco. 
 It supports 

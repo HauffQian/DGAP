@@ -26,18 +26,6 @@ python main.py \
 See `def main(...)` in [glue_main.py](glue_main.py) for all the tunable arguments. 
 
 
-#### For Multi-host Envs
-```
-python glue_main.py \
-    --n_processes 2 \
-    --host0_address 192.168.0.1 \ 
-    --process_id 1 \
-...
-```
-* `--n_processes`: number of hosts.
-* `--host0_address`: the ip of host 0.
-* `--process_id`: id of the current host (should vary across all hosts).
-
 ## Acknowledgments
 
 Part of training code is based on resources from the following project:

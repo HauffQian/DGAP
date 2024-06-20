@@ -1,6 +1,8 @@
 ## Regression Task
 
-This example implements regression with Redco. 
+This example implements regression task for discriminator. 
+It involves two directories representing the benchmark data generation process.T
+
 It supports 
 * assigning a dataset from [datasets](https://github.com/huggingface/datasets) or customizing by yourself
 * assigning a classfication model from [transformers](https://github.com/huggingface/transformers) 

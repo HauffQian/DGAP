@@ -123,12 +123,6 @@ The `Discriminator/` folder contains code for training the discriminator model. 
    ```
 3. The trained models will be saved in the `models/` folder.
 
-#### **Training Loss Visualization**
-Below is an example of the training loss curve for the discriminator:
-
-![Discriminator Training Loss](images/discriminator_loss.png)
-
----
 
 ## **Configurations**
 All experiments use YAML configuration files stored in the `configs/` folder. Modify these files to adjust parameters such as learning rate, batch size, and dataset paths.
@@ -136,39 +130,11 @@ All experiments use YAML configuration files stored in the `configs/` folder. Mo
 ---
 
 ## **Results**
-After running the experiments, you can find the results in the `results/` folder. Each experiment's result includes:
+After running the experiments, you can find the results in the paper and results(updating). Each experiment's result includes:
 - **Logs**: Detailed logs of the training/experiment process.
 - **Plots**: Visualizations of metrics such as accuracy and reward curves.
 - **Models**: Saved checkpoints for further use.
 
----
-
-## **Contributing**
-We welcome contributions! Please follow these steps to contribute:
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature name"
-   ```
-4. Push the branch to your forked repository:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request on GitHub.
-
----
-
-## **Contact**
-If you have any questions or need support, feel free to reach out:
-- **Author**: Your Name
-- **Email**: your-email@example.com
-- **GitHub**: [https://github.com/your-username](https://github.com/your-username)
-
----
 
 ## **Acknowledgments**
 This project builds upon the ScienceWorld and VirtualHome frameworks. Special thanks to the open-source community for providing these resources.

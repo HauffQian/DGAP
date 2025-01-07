@@ -83,10 +83,6 @@ The `ScienceWorld/` folder contains code for running experiments in ScienceWorld
    ```
 3. Results will be saved in the `results/` folder.
 
-#### **Sample Output**
-Below is a sample visualization of a ScienceWorld task result:
-
-![ScienceWorld Example](images/scienceworld_example.png)
 
 ---
 
@@ -103,10 +99,6 @@ The `VirtualHome/` folder contains code for simulating tasks in a household envi
    ```
 3. Results will be saved in the `results/` folder.
 
-#### **Sample Output**
-The following image demonstrates a task executed in VirtualHome:
-
-![VirtualHome Example](images/virtualhome_example.png)
 
 ---
 

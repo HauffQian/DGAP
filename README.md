@@ -1,5 +1,5 @@
 # **DGAP**
-This is the official codebase for **DGAP. Discriminator-Guided Embodied Planning for LLM Agent**(ICLR2025 submission)
+This is the official codebase for **DGAP**(ICLR2025)
 The code contains three main parts:
 1. **Experiment in ScienceWorld**: Simulated tasks in a scientific environment.
 2. **Experiment in VirtualHome**: Household tasks in a virtual environment.

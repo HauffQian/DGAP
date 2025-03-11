@@ -1288,16 +1288,6 @@ def get_model_roberta(args, input_str, tokenizer, lm_model, device, logger, embe
     return action, score
 
 
-
-
-
-
-
-
-
-
-
-
     
 def get_model_output(args, input_str, tokenizer, lm_model, device, logger): 
     input_ids = tokenizer(input_str, return_tensors="pt", max_length=args["max_input_len"] , truncation=True).input_ids

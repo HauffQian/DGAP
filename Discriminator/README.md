@@ -19,7 +19,7 @@ pip install redco==0.4.16
 
 ```shell
 python main.py \
-    --dataset_name sst2 \
+    --dataset_name """replace-to-your-own""" \
     --model_name_or_path roberta-large \
     --n_model_shards 2
 ```

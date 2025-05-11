@@ -2,7 +2,7 @@
 
 Dear all,
 
-We’ve recently encountered issues in the current codebase, which affect the training process of Discriminator.
+We’ve recently encountered performance instability when calling the API in recurrent or batched modes
 
 📌 Status: Fix in progress  
 

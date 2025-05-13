@@ -1,9 +1,7 @@
-🚧 [Notice] Codebase Issue
-
 Dear all,
 
-We’ve recently encountered performance instability when calling the API in recurrent or batched modes
+This repository is updating
 
-📌 Status: Fix in progress  
+📌 Status: In progress  
 
 Thanks for your attention
